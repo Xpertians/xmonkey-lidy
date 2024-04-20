@@ -1,0 +1,7 @@
+{
+    "obligations": ["must", "shall", "required"],
+    "grants": ["may", "permitted", "allowed"],
+    "complex_obligations": ["may not"],
+    "conditional_obligations": ["provided that", "in the event that", "if", "subject to"],
+    "conditional_grants": ["may, provided that", "is permitted only if"]
+}

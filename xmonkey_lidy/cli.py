@@ -1,24 +1,22 @@
 import click
-from .analyzer import LicenseAnalyzer
+from .train import train_model
+from .scan import scan_document
 
 @click.group()
-def cli():
+def main():
     pass
 
-@cli.command()
+@main.command()
 @click.argument('directory')
-@click.argument('save_path')
-def prepare_dataset(directory, save_path):
-    analyzer = LicenseAnalyzer()
-    analyzer.prepare_dataset(directory, save_path)
-    click.echo(f"Dataset prepared and saved to {save_path}")
+def train(directory):
+    """Train the model using texts in the specified directory."""
+    train_model(directory)
 
-@cli.command()
-@click.argument('text')
-def analyze(text):
-    analyzer = LicenseAnalyzer()
-    results = analyzer.analyze_text(text)
-    click.echo(f"Analysis Results: {results}")
+@main.command()
+@click.argument('filepath')
+def scan(filepath):
+    """Scan a document to identify obligations and grants."""
+    scan_document(filepath)
 
-if __name__ == "__main__":
-    cli()
+if __name__ == '__main__':
+    main()

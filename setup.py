@@ -1,12 +1,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='xmonkey-lidy',
-    version='1.0',
+    name='xmonkey_lidy',
+    version='0.1.0',
     packages=find_packages(),
-    install_requires=['click', 'spacy', 'pandas'],
-    entry_points='''
-        [console_scripts]
-        xmonkey-lidy=xmonkey_lidy.cli:cli
-    ''',
+    include_package_data=True,
+    install_requires=[
+        'click',
+        'nltk',
+        'scikit-learn',
+    ],
+    entry_points={
+        'console_scripts': [
+            'xmonkey-lidy = xmonkey_lidy.cli:main',
+        ],
+    },
 )
