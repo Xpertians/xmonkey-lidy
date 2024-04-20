@@ -1,7 +1,17 @@
 import json
+import re
 
 def extract_paragraphs(text):
-    return text.split('\n\n')
+    # Normalize space characters and remove unwanted characters
+    # Replace non-alphanumeric and non-colon characters with a space, except for periods and newlines
+    cleaned_text = re.sub(r'[^a-zA-Z0-9:\s\.]', ' ', text)
+    # Reduce multiple spaces to a single space
+    cleaned_text = re.sub(r'\s+', ' ', cleaned_text)
+    # Split the text at each period followed by a space or a double newline
+    paragraphs = re.split(r'\.\s+|\n\n+', cleaned_text)
+    # Further clean each paragraph to remove trailing or leading spaces
+    return [paragraph.strip() for paragraph in paragraphs if paragraph.strip()]
+
 
 def tag_paragraphs(paragraphs, keywords):
     tagged = []
