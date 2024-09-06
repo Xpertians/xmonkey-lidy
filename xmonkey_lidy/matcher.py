@@ -112,7 +112,17 @@ class LicenseMatcher:
             "generated_on": self.pattern_metadata.get("generated_on", "Unknown Date")
         }
 
+    def produce_license(self, spdx_license):
+        """Return the full text of a specific SPDX license."""
+        # Load the SPDX license data
+        spdx_licenses = self._load_json(self.licenses_file)["data"]
 
+        # Search for the requested license
+        for license_data in spdx_licenses:
+            if license_data['licenseId'].lower() == spdx_license.lower():
+                return license_data.get('licenseText', f"No license text found for {spdx_license}")
+
+        return f"SPDX license {spdx_license} not found."
 
     def match_license_using_sorensen_dice(self, text, spdx_licenses, threshold=0.5, debug=False):
         """Match a text to the closest SPDX license using Sørensen-Dice."""
