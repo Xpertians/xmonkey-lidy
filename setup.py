@@ -12,7 +12,8 @@ setup(
     },
     install_requires=[
         "requests",
-        "click"
+        "click",
+        "tqdm"
     ],
     entry_points={
         "console_scripts": [
