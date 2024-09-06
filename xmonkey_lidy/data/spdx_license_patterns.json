@@ -1,0 +1,3094 @@
+{
+    "0BSD": [
+        "bsd zero clause license",
+        "0bsd"
+    ],
+    "3D-Slicer-1.0": [
+        "3d slicer license v1.0",
+        "3d-slicer-1.0"
+    ],
+    "AAL": [
+        "attribution assurance license",
+        "aal"
+    ],
+    "Abstyles": [
+        "abstyles license",
+        "abstyles"
+    ],
+    "AdaCore-doc": [
+        "adacore doc license",
+        "adacore-doc"
+    ],
+    "Adobe-2006": [
+        "adobe-2006",
+        "adobe systems incorporated source code license agreement"
+    ],
+    "Adobe-Display-PostScript": [
+        "adobe-display-postscript",
+        "adobe display postscript license"
+    ],
+    "Adobe-Glyph": [
+        "adobe glyph list license",
+        "adobe-glyph"
+    ],
+    "Adobe-Utopia": [
+        "adobe utopia font license",
+        "adobe-utopia"
+    ],
+    "ADSL": [
+        "amazon digital services license",
+        "adsl"
+    ],
+    "AFL-1.1": [
+        "academic free license v1.1",
+        "afl-1.1"
+    ],
+    "AFL-1.2": [
+        "afl-1.2",
+        "academic free license v1.2"
+    ],
+    "AFL-2.0": [
+        "academic free license v2.0",
+        "afl-2.0"
+    ],
+    "AFL-2.1": [
+        "afl-2.1",
+        "academic free license v2.1"
+    ],
+    "AFL-3.0": [
+        "academic free license v3.0",
+        "afl-3.0"
+    ],
+    "Afmparse": [
+        "afmparse license",
+        "afmparse"
+    ],
+    "AGPL-1.0": [
+        "affero general public license v1.0",
+        "agpl-1.0",
+        "software foundation"
+    ],
+    "AGPL-1.0-only": [
+        "agpl-1.0-only",
+        "affero general public license v1.0 only",
+        "software foundation"
+    ],
+    "AGPL-1.0-or-later": [
+        "affero general public license v1.0 or later",
+        "agpl-1.0-or-later",
+        "software foundation"
+    ],
+    "AGPL-3.0": [
+        "http://www.gnu.org/licenses/>.",
+        "http://fsf.org/>",
+        "software foundation",
+        "agpl-3.0",
+        "gnu affero general public license v3.0"
+    ],
+    "AGPL-3.0-only": [
+        "http://www.gnu.org/licenses/>.",
+        "http://fsf.org/>",
+        "gnu affero general public license v3.0 only",
+        "agpl-3.0-only",
+        "software foundation"
+    ],
+    "AGPL-3.0-or-later": [
+        "http://www.gnu.org/licenses/>.",
+        "http://fsf.org/>",
+        "agpl-3.0-or-later",
+        "gnu affero general public license v3.0 or later",
+        "software foundation"
+    ],
+    "Aladdin": [
+        "aladdin",
+        "aladdin free public license",
+        "software foundation"
+    ],
+    "AMD-newlib": [
+        "amd-newlib",
+        "amd newlib license"
+    ],
+    "AMDPLPA": [
+        "amd's plpa_map.c license",
+        "amdplpa"
+    ],
+    "AML": [
+        "apple mit license",
+        "aml"
+    ],
+    "AML-glslang": [
+        "aml-glslang",
+        "aml glslang variant license"
+    ],
+    "AMPAS": [
+        "ampas",
+        "academy of motion picture arts and sciences bsd"
+    ],
+    "ANTLR-PD": [
+        "antlr software rights notice",
+        "antlr-pd"
+    ],
+    "ANTLR-PD-fallback": [
+        "antlr-pd-fallback",
+        "antlr software rights notice with license fallback"
+    ],
+    "any-OSI": [
+        "any-osi",
+        "http://www.opensource.org/licenses/alphabetical",
+        "any osi license"
+    ],
+    "Apache-1.0": [
+        "http://www.apache.org/).\"",
+        "apache license 1.0",
+        "apache-1.0",
+        "http://www.apache.org/>.",
+        "software foundation"
+    ],
+    "Apache-1.1": [
+        "http://www.apache.org/).\"",
+        "apache-1.1",
+        "http://www.apache.org/>.",
+        "software foundation",
+        "apache license 1.1"
+    ],
+    "Apache-2.0": [
+        "apache-2.0", "The Apache Software Foundation",
+        "http://www.apache.org/licenses/",
+        "apache license 2.0",
+        "http://www.apache.org/licenses/license-2.0"
+    ],
+    "APAFML": [
+        "apafml",
+        "adobe postscript afm license"
+    ],
+    "APL-1.0": [
+        "adaptive public license 1.0",
+        "apl-1.0"
+    ],
+    "App-s2p": [
+        "app-s2p",
+        "app::s2p license"
+    ],
+    "APSL-1.0": [
+        "apsl-1.0",
+        "http://www.apple.com/publicsource/modifications.html;",
+        "http://www.apple.com/legal/guidelinesfor3rdparties.html.",
+        "http://www.apple.com/publicsource",
+        "apple public source license 1.0"
+    ],
+    "APSL-1.1": [
+        "apsl-1.1",
+        "apple public source license 1.1",
+        "http://www.apple.com/publicsource/modifications.html,",
+        "http://www.apple.com/legal/guidelinesfor3rdparties.html.",
+        "http://www.apple.com/publicsource"
+    ],
+    "APSL-1.2": [
+        "apsl-1.2",
+        "http://www.apple.com/publicsource",
+        "apple public source license 1.2",
+        "http://www.apple.com/legal/guidelinesfor3rdparties.html."
+    ],
+    "APSL-2.0": [
+        "http://www.opensource.apple.com/apsl/",
+        "apple public source license 2.0",
+        "apsl-2.0",
+        "http://www.apple.com/legal/guidelinesfor3rdparties.html."
+    ],
+    "Arphic-1999": [
+        "arphic public license",
+        "arphic-1999"
+    ],
+    "Artistic-1.0": [
+        "artistic license 1.0",
+        "artistic-1.0"
+    ],
+    "Artistic-1.0-cl8": [
+        "artistic license 1.0 w/clause 8",
+        "artistic-1.0-cl8"
+    ],
+    "Artistic-1.0-Perl": [
+        "artistic license 1.0 (perl)",
+        "artistic-1.0-perl"
+    ],
+    "Artistic-2.0": [
+        "artistic license 2.0",
+        "artistic-2.0",
+        "perl foundation"
+    ],
+    "ASWF-Digital-Assets-1.0": [
+        "aswf digital assets license version 1.0",
+        "aswf-digital-assets-1.0"
+    ],
+    "ASWF-Digital-Assets-1.1": [
+        "aswf-digital-assets-1.1",
+        "aswf digital assets license 1.1"
+    ],
+    "Baekmuk": [
+        "baekmuk license",
+        "baekmuk"
+    ],
+    "Bahyph": [
+        "bahyph license",
+        "bahyph"
+    ],
+    "Barr": [
+        "barr",
+        "barr license"
+    ],
+    "bcrypt-Solar-Designer": [
+        "bcrypt solar designer license",
+        "bcrypt-solar-designer"
+    ],
+    "Beerware": [
+        "beerware license",
+        "beerware"
+    ],
+    "Bitstream-Charter": [
+        "bitstream charter font license",
+        "bitstream-charter"
+    ],
+    "Bitstream-Vera": [
+        "bitstream-vera",
+        "gnome foundation",
+        "gnome foundation",
+        "bitstream vera font license"
+    ],
+    "BitTorrent-1.0": [
+        "bittorrent open source license v1.0",
+        "http://www.bittorrent.com/license/.",
+        "bittorrent-1.0"
+    ],
+    "BitTorrent-1.1": [
+        "http://www.bittorrent.com/license/.",
+        "bittorrent open source license v1.1",
+        "bittorrent-1.1"
+    ],
+    "blessing": [
+        "blessing",
+        "sqlite blessing"
+    ],
+    "BlueOak-1.0.0": [
+        "blue oak model license 1.0.0",
+        "blueoak-1.0.0",
+        "https://blueoakcouncil.org/license/1.0.0>."
+    ],
+    "Boehm-GC": [
+        "boehm-gc",
+        "boehm-demers-weiser gc license"
+    ],
+    "Borceux": [
+        "borceux",
+        "borceux license"
+    ],
+    "Brian-Gladman-2-Clause": [
+        "brian gladman 2-clause license",
+        "brian-gladman-2-clause"
+    ],
+    "Brian-Gladman-3-Clause": [
+        "brian gladman 3-clause license",
+        "brian-gladman-3-clause"
+    ],
+    "BSD-1-Clause": [
+        "bsd-1-clause",
+        "bsd 1-clause license"
+    ],
+    "BSD-2-Clause": [
+        "bsd 2-clause \"simplified\" license",
+        "bsd-2-clause"
+    ],
+    "BSD-2-Clause-Darwin": [
+        "bsd 2-clause - ian darwin variant",
+        "bsd-2-clause-darwin"
+    ],
+    "BSD-2-Clause-first-lines": [
+        "bsd 2-clause - first lines requirement",
+        "bsd-2-clause-first-lines"
+    ],
+    "BSD-2-Clause-FreeBSD": [
+        "bsd 2-clause freebsd license",
+        "bsd-2-clause-freebsd"
+    ],
+    "BSD-2-Clause-NetBSD": [
+        "netbsd foundation",
+        "bsd 2-clause netbsd license",
+        "the foundation",
+        "bsd-2-clause-netbsd",
+        "netbsd foundation"
+    ],
+    "BSD-2-Clause-Patent": [
+        "bsd-2-clause plus patent license",
+        "bsd-2-clause-patent"
+    ],
+    "BSD-2-Clause-Views": [
+        "bsd 2-clause with views sentence",
+        "bsd-2-clause-views"
+    ],
+    "BSD-3-Clause": [
+        "bsd-3-clause",
+        "bsd 3-clause \"new\" or \"revised\" license"
+    ],
+    "BSD-3-Clause-acpica": [
+        "bsd-3-clause-acpica",
+        "bsd 3-clause acpica variant"
+    ],
+    "BSD-3-Clause-Attribution": [
+        "bsd with attribution",
+        "http://www.palermo.edu/).'",
+        "bsd-3-clause-attribution"
+    ],
+    "BSD-3-Clause-Clear": [
+        "bsd 3-clause clear license",
+        "bsd-3-clause-clear"
+    ],
+    "BSD-3-Clause-flex": [
+        "bsd-3-clause-flex",
+        "bsd 3-clause flex variant"
+    ],
+    "BSD-3-Clause-HP": [
+        "hewlett-packard bsd variant license",
+        "bsd-3-clause-hp"
+    ],
+    "BSD-3-Clause-LBNL": [
+        "lawrence berkeley national labs bsd variant license",
+        "bsd-3-clause-lbnl"
+    ],
+    "BSD-3-Clause-Modification": [
+        "bsd-3-clause-modification",
+        "bsd 3-clause modification"
+    ],
+    "BSD-3-Clause-No-Military-License": [
+        "bsd-3-clause-no-military-license",
+        "bsd 3-clause no military license"
+    ],
+    "BSD-3-Clause-No-Nuclear-License": [
+        "bsd 3-clause no nuclear license",
+        "bsd-3-clause-no-nuclear-license"
+    ],
+    "BSD-3-Clause-No-Nuclear-License-2014": [
+        "bsd-3-clause-no-nuclear-license-2014",
+        "bsd 3-clause no nuclear license 2014"
+    ],
+    "BSD-3-Clause-No-Nuclear-Warranty": [
+        "bsd-3-clause-no-nuclear-warranty",
+        "bsd 3-clause no nuclear warranty"
+    ],
+    "BSD-3-Clause-Open-MPI": [
+        "bsd-3-clause-open-mpi",
+        "bsd 3-clause open mpi variant"
+    ],
+    "BSD-3-Clause-Sun": [
+        "bsd 3-clause sun microsystems",
+        "bsd-3-clause-sun"
+    ],
+    "BSD-4-Clause": [
+        "bsd-4-clause",
+        "bsd 4-clause \"original\" or \"old\" license"
+    ],
+    "BSD-4-Clause-Shortened": [
+        "bsd-4-clause-shortened",
+        "bsd 4 clause shortened"
+    ],
+    "BSD-4-Clause-UC": [
+        "bsd-4-clause (university of california-specific)",
+        "bsd-4-clause-uc"
+    ],
+    "BSD-4.3RENO": [
+        "bsd-4.3reno",
+        "bsd 4.3 reno license"
+    ],
+    "BSD-4.3TAHOE": [
+        "bsd 4.3 tahoe license",
+        "bsd-4.3tahoe"
+    ],
+    "BSD-Advertising-Acknowledgement": [
+        "bsd advertising acknowledgement license",
+        "bsd-advertising-acknowledgement"
+    ],
+    "BSD-Attribution-HPND-disclaimer": [
+        "bsd with attribution and hpnd disclaimer",
+        "bsd-attribution-hpnd-disclaimer",
+        "http://www.cmu.edu/computing/).\""
+    ],
+    "BSD-Inferno-Nettverk": [
+        "bsd-inferno-nettverk"
+    ],
+    "BSD-Protection": [
+        "bsd-protection",
+        "bsd protection license"
+    ],
+    "BSD-Source-beginning-file": [
+        "bsd-source-beginning-file",
+        "bsd source code attribution - beginning of file variant"
+    ],
+    "BSD-Source-Code": [
+        "bsd source code attribution",
+        "bsd-source-code"
+    ],
+    "BSD-Systemics": [
+        "systemics bsd variant license",
+        "http://www.systemics.com/)",
+        "bsd-systemics"
+    ],
+    "BSD-Systemics-W3Works": [
+        "systemics w3works bsd variant license",
+        "bsd-systemics-w3works",
+        "http://www.systemics.com/)",
+        "http://www.w3works.com)"
+    ],
+    "BSL-1.0": [
+        "bsl-1.0",
+        "boost software license 1.0"
+    ],
+    "BUSL-1.1": [
+        "business source license 1.1",
+        "busl-1.1"
+    ],
+    "bzip2-1.0.5": [
+        "bzip2 and libbzip2 license v1.0.5",
+        "bzip2-1.0.5"
+    ],
+    "bzip2-1.0.6": [
+        "bzip2-1.0.6",
+        "bzip2 and libbzip2 license v1.0.6"
+    ],
+    "C-UDA-1.0": [
+        "c-uda-1.0",
+        "computational use of data agreement v1.0"
+    ],
+    "CAL-1.0": [
+        "cryptographic autonomy license 1.0",
+        "cal-1.0"
+    ],
+    "CAL-1.0-Combined-Work-Exception": [
+        "cal-1.0-combined-work-exception",
+        "cryptographic autonomy license 1.0 (combined work exception)"
+    ],
+    "Caldera": [
+        "caldera license",
+        "caldera"
+    ],
+    "Caldera-no-preamble": [
+        "caldera license (without preamble)",
+        "caldera-no-preamble"
+    ],
+    "Catharon": [
+        "catharon",
+        "catharon license"
+    ],
+    "CATOSL-1.1": [
+        "computer associates trusted open source license 1.1",
+        "catosl-1.1",
+        "http://www.ca.com/catrdmrk.htm,"
+    ],
+    "CC-BY-1.0": [
+        "cc-by-1.0",
+        "creative commons attribution 1.0 generic",
+        "http://creativecommons.org/."
+    ],
+    "CC-BY-2.0": [
+        "creative commons attribution 2.0 generic",
+        "http://creativecommons.org/.",
+        "cc-by-2.0"
+    ],
+    "CC-BY-2.5": [
+        "cc-by-2.5",
+        "http://creativecommons.org/.",
+        "creative commons attribution 2.5 generic"
+    ],
+    "CC-BY-2.5-AU": [
+        "creative commons attribution 2.5 australia",
+        "https://creativecommons.org/.",
+        "cc-by-2.5-au"
+    ],
+    "CC-BY-3.0": [
+        "https://creativecommons.org/.",
+        "creative commons attribution 3.0 unported",
+        "cc-by-3.0"
+    ],
+    "CC-BY-3.0-AT": [
+        "https://creativecommons.org/.",
+        "creative commons attribution 3.0 austria",
+        "cc-by-3.0-at"
+    ],
+    "CC-BY-3.0-AU": [
+        "cc-by-3.0-au",
+        "https://creativecommons.org/",
+        "creative commons attribution 3.0 australia"
+    ],
+    "CC-BY-3.0-DE": [
+        "https://creativecommons.org/.",
+        "creative commons attribution 3.0 germany",
+        "cc-by-3.0-de"
+    ],
+    "CC-BY-3.0-IGO": [
+        "cc-by-3.0-igo",
+        "https://creativecommons.org/.",
+        "creative commons attribution 3.0 igo"
+    ],
+    "CC-BY-3.0-NL": [
+        "https://creativecommons.org/.",
+        "cc-by-3.0-nl",
+        "creative commons attribution 3.0 netherlands"
+    ],
+    "CC-BY-3.0-US": [
+        "https://creativecommons.org/.",
+        "cc-by-3.0-us",
+        "creative commons attribution 3.0 united states"
+    ],
+    "CC-BY-4.0": [
+        "creative commons attribution 4.0 international",
+        "cc-by-4.0"
+    ],
+    "CC-BY-NC-1.0": [
+        "cc-by-nc-1.0",
+        "http://creativecommons.org/.",
+        "creative commons attribution non commercial 1.0 generic"
+    ],
+    "CC-BY-NC-2.0": [
+        "cc-by-nc-2.0",
+        "http://creativecommons.org/.",
+        "creative commons attribution non commercial 2.0 generic"
+    ],
+    "CC-BY-NC-2.5": [
+        "creative commons attribution non commercial 2.5 generic",
+        "http://creativecommons.org/.",
+        "cc-by-nc-2.5"
+    ],
+    "CC-BY-NC-3.0": [
+        "https://creativecommons.org/.",
+        "cc-by-nc-3.0",
+        "creative commons attribution non commercial 3.0 unported"
+    ],
+    "CC-BY-NC-3.0-DE": [
+        "creative commons attribution non commercial 3.0 germany",
+        "https://creativecommons.org/.",
+        "cc-by-nc-3.0-de"
+    ],
+    "CC-BY-NC-4.0": [
+        "creative commons attribution non commercial 4.0 international",
+        "cc-by-nc-4.0"
+    ],
+    "CC-BY-NC-ND-1.0": [
+        "creative commons attribution non commercial no derivatives 1.0 generic",
+        "http://creativecommons.org/.",
+        "cc-by-nc-nd-1.0"
+    ],
+    "CC-BY-NC-ND-2.0": [
+        "cc-by-nc-nd-2.0",
+        "http://creativecommons.org/.",
+        "creative commons attribution non commercial no derivatives 2.0 generic"
+    ],
+    "CC-BY-NC-ND-2.5": [
+        "cc-by-nc-nd-2.5",
+        "http://creativecommons.org/.",
+        "creative commons attribution non commercial no derivatives 2.5 generic"
+    ],
+    "CC-BY-NC-ND-3.0": [
+        "cc-by-nc-nd-3.0",
+        "https://creativecommons.org/.",
+        "creative commons attribution non commercial no derivatives 3.0 unported"
+    ],
+    "CC-BY-NC-ND-3.0-DE": [
+        "creative commons attribution non commercial no derivatives 3.0 germany",
+        "https://creativecommons.org/.",
+        "cc-by-nc-nd-3.0-de"
+    ],
+    "CC-BY-NC-ND-3.0-IGO": [
+        "creative commons attribution non commercial no derivatives 3.0 igo",
+        "https://creativecommons.org/.",
+        "cc-by-nc-nd-3.0-igo"
+    ],
+    "CC-BY-NC-ND-4.0": [
+        "cc-by-nc-nd-4.0",
+        "creative commons attribution non commercial no derivatives 4.0 international"
+    ],
+    "CC-BY-NC-SA-1.0": [
+        "creative commons attribution non commercial share alike 1.0 generic",
+        "cc-by-nc-sa-1.0",
+        "http://creativecommons.org/."
+    ],
+    "CC-BY-NC-SA-2.0": [
+        "creative commons attribution non commercial share alike 2.0 generic",
+        "cc-by-nc-sa-2.0",
+        "http://creativecommons.org/."
+    ],
+    "CC-BY-NC-SA-2.0-DE": [
+        "cc-by-nc-sa-2.0-de",
+        "creative commons attribution non commercial share alike 2.0 germany",
+        "https://creativecommons.org"
+    ],
+    "CC-BY-NC-SA-2.0-FR": [
+        "creative commons attribution-noncommercial-sharealike 2.0 france",
+        "https://creativecommons.org/.",
+        "cc-by-nc-sa-2.0-fr"
+    ],
+    "CC-BY-NC-SA-2.0-UK": [
+        "https://creativecommons.org/.",
+        "creative commons attribution non commercial share alike 2.0 england and wales",
+        "cc-by-nc-sa-2.0-uk"
+    ],
+    "CC-BY-NC-SA-2.5": [
+        "creative commons attribution non commercial share alike 2.5 generic",
+        "cc-by-nc-sa-2.5",
+        "http://creativecommons.org/."
+    ],
+    "CC-BY-NC-SA-3.0": [
+        "cc-by-nc-sa-3.0",
+        "https://creativecommons.org/.",
+        "creative commons attribution non commercial share alike 3.0 unported"
+    ],
+    "CC-BY-NC-SA-3.0-DE": [
+        "https://creativecommons.org/.",
+        "cc-by-nc-sa-3.0-de",
+        "creative commons attribution non commercial share alike 3.0 germany"
+    ],
+    "CC-BY-NC-SA-3.0-IGO": [
+        "https://creativecommons.org/.",
+        "cc-by-nc-sa-3.0-igo",
+        "creative commons attribution non commercial share alike 3.0 igo"
+    ],
+    "CC-BY-NC-SA-4.0": [
+        "cc-by-nc-sa-4.0",
+        "creative commons attribution non commercial share alike 4.0 international"
+    ],
+    "CC-BY-ND-1.0": [
+        "creative commons attribution no derivatives 1.0 generic",
+        "http://creativecommons.org/.",
+        "cc-by-nd-1.0"
+    ],
+    "CC-BY-ND-2.0": [
+        "creative commons attribution no derivatives 2.0 generic",
+        "http://creativecommons.org/.",
+        "cc-by-nd-2.0"
+    ],
+    "CC-BY-ND-2.5": [
+        "creative commons attribution no derivatives 2.5 generic",
+        "cc-by-nd-2.5",
+        "http://creativecommons.org/."
+    ],
+    "CC-BY-ND-3.0": [
+        "https://creativecommons.org/.",
+        "creative commons attribution no derivatives 3.0 unported",
+        "cc-by-nd-3.0"
+    ],
+    "CC-BY-ND-3.0-DE": [
+        "https://creativecommons.org/.",
+        "cc-by-nd-3.0-de",
+        "creative commons attribution no derivatives 3.0 germany"
+    ],
+    "CC-BY-ND-4.0": [
+        "creative commons attribution no derivatives 4.0 international",
+        "cc-by-nd-4.0"
+    ],
+    "CC-BY-SA-1.0": [
+        "cc-by-sa-1.0",
+        "http://creativecommons.org/.",
+        "creative commons attribution share alike 1.0 generic"
+    ],
+    "CC-BY-SA-2.0": [
+        "cc-by-sa-2.0",
+        "creative commons attribution share alike 2.0 generic",
+        "http://creativecommons.org/."
+    ],
+    "CC-BY-SA-2.0-UK": [
+        "cc-by-sa-2.0-uk",
+        "https://creativecommons.org/.",
+        "creative commons attribution share alike 2.0 england and wales"
+    ],
+    "CC-BY-SA-2.1-JP": [
+        "creative commons attribution share alike 2.1 japan",
+        "https://creativecommons.org/\u304b\u3089\u3001\u30af\u30ea\u30a8\u30a4\u30c6\u30a3\u30d6\u30fb\u30b3\u30e2\u30f3\u30ba\u30fb\u30b8\u30e3\u30d1\u30f3\u306fhttp://www.creativecommons.jp/\u304b\u3089\u9023\u7d61\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002",
+        "cc-by-sa-2.1-jp"
+    ],
+    "CC-BY-SA-2.5": [
+        "cc-by-sa-2.5",
+        "creative commons attribution share alike 2.5 generic",
+        "http://creativecommons.org/."
+    ],
+    "CC-BY-SA-3.0": [
+        "cc-by-sa-3.0",
+        "https://creativecommons.org/.",
+        "creative commons attribution share alike 3.0 unported",
+        "https://creativecommons.org/compatiblelicenses"
+    ],
+    "CC-BY-SA-3.0-AT": [
+        "creative commons attribution share alike 3.0 austria",
+        "https://creativecommons.org/.",
+        "https://creativecommons.org/compatiblelicenses",
+        "cc-by-sa-3.0-at"
+    ],
+    "CC-BY-SA-3.0-DE": [
+        "creative commons attribution share alike 3.0 germany",
+        "https://creativecommons.org/.",
+        "cc-by-sa-3.0-de",
+        "https://creativecommons.org/compatiblelicenses"
+    ],
+    "CC-BY-SA-3.0-IGO": [
+        "https://creativecommons.org/.",
+        "cc-by-sa-3.0-igo",
+        "creative commons attribution-sharealike 3.0 igo",
+        "https://creativecommons.org/compatiblelicenses"
+    ],
+    "CC-BY-SA-4.0": [
+        "creative commons attribution share alike 4.0 international",
+        "cc-by-sa-4.0"
+    ],
+    "CC-PDDC": [
+        "creative commons public domain dedication and certification",
+        "cc-pddc"
+    ],
+    "CC0-1.0": [
+        "cc0-1.0",
+        "creative commons zero v1.0 universal"
+    ],
+    "CDDL-1.0": [
+        "common development and distribution license 1.0",
+        "cddl-1.0"
+    ],
+    "CDDL-1.1": [
+        "cddl-1.1",
+        "common development and distribution license 1.1"
+    ],
+    "CDL-1.0": [
+        "http://www.opensource.apple.com/cdl/",
+        "cdl-1.0",
+        "common documentation license 1.0"
+    ],
+    "CDLA-Permissive-1.0": [
+        "linux foundation",
+        "community data license agreement permissive 1.0",
+        "cdla-permissive-1.0"
+    ],
+    "CDLA-Permissive-2.0": [
+        "community data license agreement permissive 2.0",
+        "cdla-permissive-2.0"
+    ],
+    "CDLA-Sharing-1.0": [
+        "cdla-sharing-1.0",
+        "linux foundation",
+        "community data license agreement sharing 1.0"
+    ],
+    "CECILL-1.0": [
+        "cecill-1.0",
+        "cecill free software license agreement v1.0"
+    ],
+    "CECILL-1.1": [
+        "cecill free software license agreement v1.1",
+        "cecill-1.1"
+    ],
+    "CECILL-2.0": [
+        "cecill free software license agreement v2.0",
+        "cecill-2.0",
+        "software foundation"
+    ],
+    "CECILL-2.1": [
+        "http://www.cecill.info/index.en.html)",
+        "cecill free software license agreement v2.1",
+        "cecill-2.1",
+        "software foundation"
+    ],
+    "CECILL-B": [
+        "cecill-b free software license agreement",
+        "cecill-b"
+    ],
+    "CECILL-C": [
+        "cecill-c",
+        "cecill-c free software license agreement"
+    ],
+    "CERN-OHL-1.1": [
+        "http://www.ohwr.org/)",
+        "cern-ohl-1.1",
+        "cern open hardware licence v1.1"
+    ],
+    "CERN-OHL-1.2": [
+        "cern-ohl-1.2",
+        "cern open hardware licence v1.2"
+    ],
+    "CERN-OHL-P-2.0": [
+        "cern open hardware licence version 2 - permissive",
+        "cern-ohl-p-2.0"
+    ],
+    "CERN-OHL-S-2.0": [
+        "cern-ohl-s-2.0",
+        "cern open hardware licence version 2 - strongly reciprocal"
+    ],
+    "CERN-OHL-W-2.0": [
+        "cern-ohl-w-2.0",
+        "cern open hardware licence version 2 - weakly reciprocal"
+    ],
+    "CFITSIO": [
+        "cfitsio",
+        "cfitsio license"
+    ],
+    "check-cvs": [
+        "check-cvs",
+        "check-cvs license"
+    ],
+    "checkmk": [
+        "checkmk license",
+        "checkmk"
+    ],
+    "ClArtistic": [
+        "clarified artistic license",
+        "clartistic"
+    ],
+    "Clips": [
+        "clips",
+        "clips license"
+    ],
+    "CMU-Mach": [
+        "cmu mach license",
+        "cmu-mach"
+    ],
+    "CMU-Mach-nodoc": [
+        "cmu-mach-nodoc",
+        "cmu    mach - no notices-in-documentation variant"
+    ],
+    "CNRI-Jython": [
+        "cnri-jython",
+        "cnri jython license",
+        "http://hdl.handle.net/1895.22/1006.\u201d"
+    ],
+    "CNRI-Python": [
+        "cnri-python",
+        "cnri python license",
+        "http://hdl.handle.net/1895.22/1011\"."
+    ],
+    "CNRI-Python-GPL-Compatible": [
+        "http://hdl.handle.net/1895.22/1013\".",
+        "cnri-python-gpl-compatible",
+        "cnri python open source gpl compatible license agreement"
+    ],
+    "COIL-1.0": [
+        "coil-1.0",
+        "copyfree open innovation license"
+    ],
+    "Community-Spec-1.0": [
+        "community-spec-1.0",
+        "https://creativecommons.org/licenses/by/4.0/.",
+        "community specification license 1.0",
+        "development foundation"
+    ],
+    "Condor-1.1": [
+        "condor public license v1.1",
+        "condor-1.1",
+        "http://pages.cs.wisc.edu/~miron/miron.html",
+        "http://www.condorproject.org/.",
+        "http://www.condorproject.org/)\""
+    ],
+    "copyleft-next-0.3.0": [
+        "copyleft-next 0.3.0",
+        "copyleft-next-0.3.0",
+        "https://gitorious.org/copyleft-next/>",
+        "software foundation"
+    ],
+    "copyleft-next-0.3.1": [
+        "copyleft-next 0.3.1",
+        "https://github.com/copyleft-next/copyleft-next.git/>",
+        "copyleft-next-0.3.1",
+        "software foundation"
+    ],
+    "Cornell-Lossless-JPEG": [
+        "cornell-lossless-jpeg",
+        "cornell lossless jpeg license"
+    ],
+    "CPAL-1.0": [
+        "common public attribution license 1.0",
+        "cpal-1.0"
+    ],
+    "CPL-1.0": [
+        "common public license 1.0",
+        "cpl-1.0"
+    ],
+    "CPOL-1.02": [
+        "cpol-1.02",
+        "code project open license 1.02"
+    ],
+    "Cronyx": [
+        "cronyx",
+        "cronyx license"
+    ],
+    "Crossword": [
+        "crossword license",
+        "crossword"
+    ],
+    "CrystalStacker": [
+        "crystalstacker",
+        "crystalstacker license"
+    ],
+    "CUA-OPL-1.0": [
+        "http://cuaoffice.sourceforge.net/",
+        "cua office public license v1.0",
+        "cua-opl-1.0"
+    ],
+    "Cube": [
+        "cube",
+        "cube license"
+    ],
+    "curl": [
+        "curl",
+        "curl license"
+    ],
+    "cve-tou": [
+        "cve-tou",
+        "common vulnerability enumeration tou license"
+    ],
+    "D-FSL-1.0": [
+        "d-fsl-1.0",
+        "http://www.ifross.de).",
+        "deutsche freie software lizenz",
+        "http://www.fsf.org/licenses/gpl.",
+        "http://www.d-fsl.de;",
+        "http://www.d-fsl.de"
+    ],
+    "DEC-3-Clause": [
+        "dec-3-clause",
+        "dec 3-clause license"
+    ],
+    "diffmark": [
+        "diffmark license",
+        "diffmark"
+    ],
+    "DL-DE-BY-2.0": [
+        "http://www.govdata.de/dl-de/by-2-0",
+        "data licence germany \u2013 attribution \u2013 version 2.0",
+        "dl-de-by-2.0"
+    ],
+    "DL-DE-ZERO-2.0": [
+        "dl-de-zero-2.0",
+        "data licence germany \u2013 zero \u2013 version 2.0",
+        "https://www.govdata.de/dl-de/zero-2-0"
+    ],
+    "DOC": [
+        "doc",
+        "doc license"
+    ],
+    "DocBook-Schema": [
+        "http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)",
+        "docbook schema license",
+        "docbook-schema",
+        "http://www.oasis-open.org/docbook/."
+    ],
+    "DocBook-XML": [
+        "docbook xml license",
+        "docbook-xml"
+    ],
+    "Dotseqn": [
+        "dotseqn",
+        "dotseqn license"
+    ],
+    "DRL-1.0": [
+        "drl-1.0",
+        "detection rule license 1.0"
+    ],
+    "DRL-1.1": [
+        "drl-1.1",
+        "detection rule license 1.1"
+    ],
+    "DSDP": [
+        "dsdp license",
+        "dsdp"
+    ],
+    "dtoa": [
+        "david m. gay dtoa license",
+        "dtoa"
+    ],
+    "dvipdfm": [
+        "dvipdfm license",
+        "dvipdfm"
+    ],
+    "ECL-1.0": [
+        "ecl-1.0",
+        "educational community license v1.0"
+    ],
+    "ECL-2.0": [
+        "http://www.osedu.org/licenses/ecl-2.0",
+        "http://www.osedu.org/licenses/",
+        "ecl-2.0",
+        "http://www.apache.org/licenses/license-2.0",
+        "educational community license v2.0"
+    ],
+    "eCos-2.0": [
+        "http://sources.redhat.com/ecos/ecos-license/",
+        "ecos license version 2.0",
+        "ecos-2.0",
+        "software foundation"
+    ],
+    "EFL-1.0": [
+        "efl-1.0",
+        "eiffel forum license v1.0"
+    ],
+    "EFL-2.0": [
+        "efl-2.0",
+        "eiffel forum license v2.0"
+    ],
+    "eGenix": [
+        "egenix.com public license 1.1.0",
+        "egenix"
+    ],
+    "Elastic-2.0": [
+        "elastic license 2.0",
+        "elastic-2.0",
+        "https://www.elastic.co/licensing/elastic-license"
+    ],
+    "Entessa": [
+        "http://www.openseal.org/).\"",
+        "entessa",
+        "entessa public license v1.0",
+        "http://www.openseal.org/>.",
+        "http://www.entessa.com."
+    ],
+    "EPICS": [
+        "epics",
+        "epics open license"
+    ],
+    "EPL-1.0": [
+        "eclipse public license 1.0",
+        "eclipse foundation",
+        "epl-1.0"
+    ],
+    "EPL-2.0": [
+        "epl-2.0",
+        "eclipse foundation",
+        "eclipse public license 2.0"
+    ],
+    "ErlPL-1.1": [
+        "erlang public license v1.1",
+        "erlpl-1.1",
+        "http://www.erlang.org/."
+    ],
+    "etalab-2.0": [
+        "knowledge foundation",
+        "http://www.data.gouv.fr/fr/datasets/xxx/,",
+        "etalab-2.0",
+        "etalab open license 2.0"
+    ],
+    "EUDatagrid": [
+        "http://www.eu-datagrid.org/.",
+        "eu datagrid software license",
+        "http://www.eu-datagrid.org/).\"",
+        "eudatagrid"
+    ],
+    "EUPL-1.0": [
+        "eupl-1.0",
+        "european union public license 1.0"
+    ],
+    "EUPL-1.1": [
+        "european union public license 1.1",
+        "eupl-1.1"
+    ],
+    "EUPL-1.2": [
+        "european union public license 1.2",
+        "eupl-1.2"
+    ],
+    "Eurosym": [
+        "eurosym license",
+        "eurosym"
+    ],
+    "Fair": [
+        "fair",
+        "fair license"
+    ],
+    "FBM": [
+        "fbm",
+        "fuzzy bitmap license"
+    ],
+    "FDK-AAC": [
+        "fdk-aac",
+        "fraunhofer fdk aac codec library"
+    ],
+    "Ferguson-Twofish": [
+        "ferguson-twofish",
+        "ferguson twofish license"
+    ],
+    "Frameworx-1.0": [
+        "frameworx open license 1.0",
+        "http://www.frameworx.com.",
+        "frameworx-1.0"
+    ],
+    "FreeBSD-DOC": [
+        "freebsd documentation license",
+        "freebsd-doc",
+        "https://www.opengroup.org/membership/forums/platform/unix."
+    ],
+    "FreeImage": [
+        "http://home.wxs.nl/~flvdberg/freeimage-license.txt",
+        "freeimage",
+        "freeimage public license v1.0"
+    ],
+    "FSFAP": [
+        "fsfap",
+        "fsf all permissive license"
+    ],
+    "FSFAP-no-warranty-disclaimer": [
+        "fsf all permissive license (without warranty)",
+        "fsfap-no-warranty-disclaimer"
+    ],
+    "FSFUL": [
+        "fsf unlimited license",
+        "fsful",
+        "software foundation"
+    ],
+    "FSFULLR": [
+        "fsfullr",
+        "fsf unlimited license (with license retention)",
+        "software foundation"
+    ],
+    "FSFULLRWD": [
+        "fsfullrwd",
+        "fsf unlimited license (with license retention and warranty disclaimer)",
+        "software foundation"
+    ],
+    "FTL": [
+        "ftl",
+        "freetype project license",
+        "http://www.freetype.org"
+    ],
+    "Furuseth": [
+        "furuseth license",
+        "furuseth"
+    ],
+    "fwlw": [
+        "fwlw",
+        "fwlw license"
+    ],
+    "GCR-docs": [
+        "gnome gcr documentation license",
+        "gcr-docs"
+    ],
+    "GD": [
+        "gd license",
+        "gd"
+    ],
+    "GFDL-1.1": [
+        "http://www.gnu.org/copyleft/.",
+        "gnu free documentation license v1.1",
+        "gfdl-1.1",
+        "software foundation"
+    ],
+    "GFDL-1.1-invariants-only": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.1-invariants-only",
+        "gnu free documentation license v1.1 only - invariants",
+        "software foundation"
+    ],
+    "GFDL-1.1-invariants-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "gnu free documentation license v1.1 or later - invariants",
+        "gfdl-1.1-invariants-or-later",
+        "software foundation"
+    ],
+    "GFDL-1.1-no-invariants-only": [
+        "http://www.gnu.org/copyleft/.",
+        "gnu free documentation license v1.1 only - no invariants",
+        "gfdl-1.1-no-invariants-only",
+        "software foundation"
+    ],
+    "GFDL-1.1-no-invariants-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.1-no-invariants-or-later",
+        "gnu free documentation license v1.1 or later - no invariants",
+        "software foundation"
+    ],
+    "GFDL-1.1-only": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.1-only",
+        "gnu free documentation license v1.1 only",
+        "software foundation"
+    ],
+    "GFDL-1.1-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.1-or-later",
+        "gnu free documentation license v1.1 or later",
+        "software foundation"
+    ],
+    "GFDL-1.2": [
+        "http://www.gnu.org/copyleft/.",
+        "gnu free documentation license v1.2",
+        "gfdl-1.2",
+        "software foundation"
+    ],
+    "GFDL-1.2-invariants-only": [
+        "http://www.gnu.org/copyleft/.",
+        "gnu free documentation license v1.2 only - invariants",
+        "gfdl-1.2-invariants-only",
+        "software foundation"
+    ],
+    "GFDL-1.2-invariants-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "gnu free documentation license v1.2 or later - invariants",
+        "gfdl-1.2-invariants-or-later",
+        "software foundation"
+    ],
+    "GFDL-1.2-no-invariants-only": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.2-no-invariants-only",
+        "gnu free documentation license v1.2 only - no invariants",
+        "software foundation"
+    ],
+    "GFDL-1.2-no-invariants-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.2-no-invariants-or-later",
+        "gnu free documentation license v1.2 or later - no invariants",
+        "software foundation"
+    ],
+    "GFDL-1.2-only": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.2-only",
+        "gnu free documentation license v1.2 only",
+        "software foundation"
+    ],
+    "GFDL-1.2-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.2-or-later",
+        "gnu free documentation license v1.2 or later",
+        "software foundation"
+    ],
+    "GFDL-1.3": [
+        "http://www.gnu.org/copyleft/.",
+        "http://fsf.org/>",
+        "gfdl-1.3",
+        "gnu free documentation license v1.3",
+        "software foundation"
+    ],
+    "GFDL-1.3-invariants-only": [
+        "http://www.gnu.org/copyleft/.",
+        "http://fsf.org/>",
+        "gnu free documentation license v1.3 only - invariants",
+        "software foundation",
+        "gfdl-1.3-invariants-only"
+    ],
+    "GFDL-1.3-invariants-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "http://fsf.org/>",
+        "gfdl-1.3-invariants-or-later",
+        "software foundation",
+        "gnu free documentation license v1.3 or later - invariants"
+    ],
+    "GFDL-1.3-no-invariants-only": [
+        "http://www.gnu.org/copyleft/.",
+        "http://fsf.org/>",
+        "gnu free documentation license v1.3 only - no invariants",
+        "gfdl-1.3-no-invariants-only",
+        "software foundation"
+    ],
+    "GFDL-1.3-no-invariants-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "http://fsf.org/>",
+        "gfdl-1.3-no-invariants-or-later",
+        "software foundation",
+        "gnu free documentation license v1.3 or later - no invariants"
+    ],
+    "GFDL-1.3-only": [
+        "http://www.gnu.org/copyleft/.",
+        "http://fsf.org/>",
+        "gfdl-1.3-only",
+        "software foundation",
+        "gnu free documentation license v1.3 only"
+    ],
+    "GFDL-1.3-or-later": [
+        "http://www.gnu.org/copyleft/.",
+        "gfdl-1.3-or-later",
+        "http://fsf.org/>",
+        "gnu free documentation license v1.3 or later",
+        "software foundation"
+    ],
+    "Giftware": [
+        "giftware",
+        "giftware license"
+    ],
+    "GL2PS": [
+        "gl2ps",
+        "gl2ps license"
+    ],
+    "Glide": [
+        "glide",
+        "3dfx glide license"
+    ],
+    "Glulxe": [
+        "glulxe",
+        "glulxe license"
+    ],
+    "GLWTPL": [
+        "good luck with that public license",
+        "glwtpl"
+    ],
+    "gnuplot": [
+        "gnuplot license",
+        "gnuplot"
+    ],
+    "GPL-1.0": [
+        "gnu general public license v1.0 only",
+        "gpl-1.0",
+        "software foundation"
+    ],
+    "GPL-1.0+": [
+        "gnu general public license v1.0 or later",
+        "gpl-1.0+",
+        "software foundation"
+    ],
+    "GPL-1.0-only": [
+        "gpl-1.0-only",
+        "gnu general public license v1.0 only",
+        "software foundation"
+    ],
+    "GPL-1.0-or-later": [
+        "gnu general public license v1.0 or later",
+        "gpl-1.0-or-later",
+        "software foundation"
+    ],
+    "GPL-2.0": [
+        "gpl-2.0",
+        "gnu general public license v2.0 only",
+        "software foundation"
+    ],
+    "GPL-2.0+": [
+        "gpl-2.0+",
+        "gnu general public license v2.0 or later",
+        "software foundation"
+    ],
+    "GPL-2.0-only": [
+        "gpl-2.0-only",
+        "gnu general public license v2.0 only",
+        "software foundation"
+    ],
+    "GPL-2.0-or-later": [
+        "gnu general public license v2.0 or later",
+        "gpl-2.0-or-later",
+        "software foundation"
+    ],
+    "GPL-2.0-with-autoconf-exception": [
+        "gpl-2.0-with-autoconf-exception",
+        "gnu general public license v2.0 w/autoconf exception",
+        "software foundation"
+    ],
+    "GPL-2.0-with-bison-exception": [
+        "gpl-2.0-with-bison-exception",
+        "gnu general public license v2.0 w/bison exception",
+        "software foundation"
+    ],
+    "GPL-2.0-with-classpath-exception": [
+        "gpl-2.0-with-classpath-exception",
+        "gnu general public license v2.0 w/classpath exception"
+    ],
+    "GPL-2.0-with-font-exception": [
+        "gpl-2.0-with-font-exception",
+        "gnu general public license v2.0 w/font exception"
+    ],
+    "GPL-2.0-with-GCC-exception": [
+        "gpl-2.0-with-gcc-exception",
+        "gnu general public license v2.0 w/gcc runtime library exception",
+        "software foundation"
+    ],
+    "GPL-3.0": [
+        "gnu general public license v3.0 only",
+        "https://fsf.org/>",
+        "https://www.gnu.org/licenses/>.",
+        "https://www.gnu.org/philosophy/why-not-lgpl.html>.",
+        "gpl-3.0",
+        "software foundation"
+    ],
+    "GPL-3.0+": [
+        "https://fsf.org/>",
+        "https://www.gnu.org/",
+        "https://www.gnu.org/licenses/>.",
+        "gnu general public license v3.0 or later",
+        "software foundation",
+        "gpl-3.0+"
+    ],
+    "GPL-3.0-only": [
+        "gnu general public license v3.0 only",
+        "https://fsf.org/>",
+        "https://www.gnu.org/licenses/>.",
+        "https://www.gnu.org/philosophy/why-not-lgpl.html>.",
+        "gpl-3.0-only",
+        "software foundation"
+    ],
+    "GPL-3.0-or-later": [
+        "https://fsf.org/>",
+        "https://www.gnu.org/licenses/>.",
+        "https://www.gnu.org/philosophy/why-not-lgpl.html>.",
+        "gnu general public license v3.0 or later",
+        "gpl-3.0-or-later",
+        "software foundation"
+    ],
+    "GPL-3.0-with-autoconf-exception": [
+        "gnu general public license v3.0 w/autoconf exception",
+        "http://fsf.org/<",
+        "gpl-3.0-with-autoconf-exception",
+        "software foundation"
+    ],
+    "GPL-3.0-with-GCC-exception": [
+        "http://fsf.org/>",
+        "gnu general public license v3.0 w/gcc runtime library exception",
+        "gpl-3.0-with-gcc-exception",
+        "software foundation",
+        "http://www.gnu.org/licenses/gcc-exception.html"
+    ],
+    "Graphics-Gems": [
+        "graphics-gems",
+        "graphics gems license"
+    ],
+    "gSOAP-1.3b": [
+        "http://www.cs.fsu.edu/",
+        "gsoap-1.3b",
+        "gsoap public license v1.3b"
+    ],
+    "gtkbook": [
+        "gtkbook",
+        "gtkbook license"
+    ],
+    "Gutmann": [
+        "gutmann license",
+        "gutmann"
+    ],
+    "HaskellReport": [
+        "haskell language report license",
+        "haskellreport"
+    ],
+    "hdparm": [
+        "hdparm license",
+        "hdparm"
+    ],
+    "HIDAPI": [
+        "hidapi license",
+        "hidapi"
+    ],
+    "Hippocratic-2.1": [
+        "hippocratic license 2.1",
+        "hippocratic-2.1",
+        "https://ethicalsource.dev)"
+    ],
+    "HP-1986": [
+        "hewlett-packard 1986 license",
+        "hp-1986"
+    ],
+    "HP-1989": [
+        "software\nfoundation",
+        "hewlett-packard 1989 license",
+        "hp-1989",
+        "software foundation"
+    ],
+    "HPND": [
+        "historical permission notice and disclaimer",
+        "hpnd"
+    ],
+    "HPND-DEC": [
+        "historical permission notice and disclaimer - dec variant",
+        "hpnd-dec"
+    ],
+    "HPND-doc": [
+        "hpnd-doc",
+        "historical permission notice and disclaimer - documentation variant"
+    ],
+    "HPND-doc-sell": [
+        "historical permission notice and disclaimer - documentation sell variant",
+        "hpnd-doc-sell"
+    ],
+    "HPND-export-US": [
+        "hpnd with us government export control warning",
+        "hpnd-export-us"
+    ],
+    "HPND-export-US-acknowledgement": [
+        "hpnd with us government export control warning and acknowledgment",
+        "hpnd-export-us-acknowledgement"
+    ],
+    "HPND-export-US-modify": [
+        "hpnd-export-us-modify",
+        "hpnd with us government export control warning and modification rqmt"
+    ],
+    "HPND-export2-US": [
+        "hpnd with us government export control and 2 disclaimers",
+        "hpnd-export2-us"
+    ],
+    "HPND-Fenneberg-Livingston": [
+        "historical permission notice and disclaimer - fenneberg-livingston variant",
+        "hpnd-fenneberg-livingston"
+    ],
+    "HPND-INRIA-IMAG": [
+        "hpnd-inria-imag",
+        "historical permission notice and disclaimer    - inria-imag variant"
+    ],
+    "HPND-Intel": [
+        "historical permission notice and disclaimer - intel variant",
+        "hpnd-intel"
+    ],
+    "HPND-Kevlin-Henney": [
+        "historical permission notice and disclaimer - kevlin henney variant",
+        "hpnd-kevlin-henney"
+    ],
+    "HPND-Markus-Kuhn": [
+        "hpnd-markus-kuhn",
+        "historical permission notice and disclaimer - markus kuhn variant"
+    ],
+    "HPND-merchantability-variant": [
+        "hpnd-merchantability-variant",
+        "historical permission notice and disclaimer - merchantability variant"
+    ],
+    "HPND-MIT-disclaimer": [
+        "historical permission notice and disclaimer with mit disclaimer",
+        "hpnd-mit-disclaimer"
+    ],
+    "HPND-Netrek": [
+        "hpnd-netrek",
+        "historical permission notice and disclaimer - netrek variant"
+    ],
+    "HPND-Pbmplus": [
+        "historical permission notice and disclaimer - pbmplus variant",
+        "hpnd-pbmplus"
+    ],
+    "HPND-sell-MIT-disclaimer-xserver": [
+        "hpnd-sell-mit-disclaimer-xserver",
+        "historical permission notice and disclaimer - sell xserver variant with mit disclaimer"
+    ],
+    "HPND-sell-regexpr": [
+        "hpnd-sell-regexpr",
+        "historical permission notice and disclaimer - sell regexpr variant"
+    ],
+    "HPND-sell-variant": [
+        "hpnd-sell-variant",
+        "historical permission notice and disclaimer - sell variant"
+    ],
+    "HPND-sell-variant-MIT-disclaimer": [
+        "hpnd sell variant with mit disclaimer",
+        "hpnd-sell-variant-mit-disclaimer"
+    ],
+    "HPND-sell-variant-MIT-disclaimer-rev": [
+        "hpnd-sell-variant-mit-disclaimer-rev",
+        "hpnd sell variant with mit disclaimer - reverse"
+    ],
+    "HPND-UC": [
+        "historical permission notice and disclaimer - university of california variant",
+        "hpnd-uc"
+    ],
+    "HPND-UC-export-US": [
+        "hpnd-uc-export-us",
+        "historical permission notice and disclaimer - university of california, us export warning"
+    ],
+    "HTMLTIDY": [
+        "html tidy license",
+        "htmltidy"
+    ],
+    "IBM-pibs": [
+        "ibm powerpc initialization and boot software",
+        "ibm-pibs"
+    ],
+    "ICU": [
+        "icu",
+        "icu license"
+    ],
+    "IEC-Code-Components-EULA": [
+        "iec    code components end-user licence agreement",
+        "iec-code-components-eula"
+    ],
+    "IJG": [
+        "independent jpeg group license",
+        "ijg",
+        "software foundation"
+    ],
+    "IJG-short": [
+        "independent jpeg group license - short",
+        "ijg-short"
+    ],
+    "ImageMagick": [
+        "http://www.imagemagick.org/script/license.php",
+        "imagemagick license",
+        "imagemagick"
+    ],
+    "iMatix": [
+        "imatix",
+        "http://www.imatix.com.",
+        "http://www.imatix.com>\".",
+        "imatix standard function library agreement"
+    ],
+    "Imlib2": [
+        "imlib2 license",
+        "imlib2"
+    ],
+    "Info-ZIP": [
+        "info-zip",
+        "info-zip license"
+    ],
+    "Inner-Net-2.0": [
+        "inner-net-2.0",
+        "inner net license v2.0"
+    ],
+    "Intel": [
+        "intel open source license",
+        "intel"
+    ],
+    "Intel-ACPI": [
+        "intel acpi software license agreement",
+        "intel-acpi"
+    ],
+    "Interbase-1.0": [
+        "interbase public license v1.0",
+        "http://www.interbase.com/ipl.html",
+        "interbase-1.0"
+    ],
+    "IPA": [
+        "ipa",
+        "ipa font license"
+    ],
+    "IPL-1.0": [
+        "ipl-1.0",
+        "ibm public license v1.0"
+    ],
+    "ISC": [
+        "isc license",
+        "isc"
+    ],
+    "ISC-Veillard": [
+        "isc-veillard",
+        "isc veillard variant"
+    ],
+    "Jam": [
+        "jam",
+        "jam license"
+    ],
+    "JasPer-2.0": [
+        "jasper license",
+        "jasper-2.0"
+    ],
+    "JPL-image": [
+        "jpl image use policy",
+        "jpl-image"
+    ],
+    "JPNIC": [
+        "jpnic",
+        "japan network information center license"
+    ],
+    "JSON": [
+        "json license",
+        "json"
+    ],
+    "Kastrup": [
+        "kastrup license",
+        "kastrup"
+    ],
+    "Kazlib": [
+        "kazlib",
+        "kazlib license"
+    ],
+    "Knuth-CTAN": [
+        "knuth ctan license",
+        "knuth-ctan"
+    ],
+    "LAL-1.2": [
+        "lal-1.2",
+        "licence art libre 1.2"
+    ],
+    "LAL-1.3": [
+        "licence art libre 1.3",
+        "lal-1.3"
+    ],
+    "Latex2e": [
+        "latex2e license",
+        "latex2e"
+    ],
+    "Latex2e-translated-notice": [
+        "latex2e with translated notice permission",
+        "latex2e-translated-notice",
+        "the foundation",
+        "software\nfoundation"
+    ],
+    "Leptonica": [
+        "leptonica",
+        "leptonica license"
+    ],
+    "LGPL-2.0": [
+        "lgpl-2.0",
+        "gnu library general public license v2 only",
+        "software foundation"
+    ],
+    "LGPL-2.0+": [
+        "gnu library general public license v2 or later",
+        "lgpl-2.0+",
+        "software foundation"
+    ],
+    "LGPL-2.0-only": [
+        "lgpl-2.0-only",
+        "gnu library general public license v2 only",
+        "software foundation"
+    ],
+    "LGPL-2.0-or-later": [
+        "gnu library general public license v2 or later",
+        "lgpl-2.0-or-later",
+        "software foundation"
+    ],
+    "LGPL-2.1": [
+        "lgpl-2.1",
+        "gnu lesser general public license v2.1 only",
+        "software foundation"
+    ],
+    "LGPL-2.1+": [
+        "gnu lesser general public license v2.1 or later",
+        "lgpl-2.1+",
+        "software foundation"
+    ],
+    "LGPL-2.1-only": [
+        "gnu lesser general public license v2.1 only",
+        "lgpl-2.1-only",
+        "software foundation"
+    ],
+    "LGPL-2.1-or-later": [
+        "gnu lesser general public license v2.1 or later",
+        "lgpl-2.1-or-later",
+        "software foundation"
+    ],
+    "LGPL-3.0": [
+        "http://www.gnu.org/licenses/>.",
+        "lgpl-3.0",
+        "http://fsf.org/>",
+        "http://www.gnu.org/philosophy/why-not-lgpl.html>.",
+        "software foundation",
+        "gnu lesser general public license v3.0 only"
+    ],
+    "LGPL-3.0+": [
+        "gnu lesser general public license v3.0 or later",
+        "lgpl-3.0+",
+        "https://fsf.org/>",
+        "https://www.gnu.org/",
+        "https://www.gnu.org/licenses/>.",
+        "software foundation"
+    ],
+    "LGPL-3.0-only": [
+        "http://www.gnu.org/licenses/>.",
+        "http://fsf.org/>",
+        "http://www.gnu.org/philosophy/why-not-lgpl.html>.",
+        "software foundation",
+        "gnu lesser general public license v3.0 only",
+        "lgpl-3.0-only"
+    ],
+    "LGPL-3.0-or-later": [
+        "http://www.gnu.org/licenses/>.",
+        "gnu lesser general public license v3.0 or later",
+        "http://fsf.org/>",
+        "http://www.gnu.org/philosophy/why-not-lgpl.html>.",
+        "lgpl-3.0-or-later",
+        "software foundation"
+    ],
+    "LGPLLR": [
+        "lesser general public license for linguistic resources",
+        "lgpllr",
+        "software foundation"
+    ],
+    "Libpng": [
+        "libpng",
+        "libpng license"
+    ],
+    "libpng-2.0": [
+        "png reference library version 2",
+        "libpng-2.0"
+    ],
+    "libselinux-1.0": [
+        "libselinux public domain notice",
+        "libselinux-1.0"
+    ],
+    "libtiff": [
+        "libtiff",
+        "libtiff license"
+    ],
+    "libutil-David-Nugent": [
+        "libutil david nugent license",
+        "libutil-david-nugent"
+    ],
+    "LiLiQ-P-1.1": [
+        "liliq-p-1.1",
+        "licence libre du qu\u00e9bec \u2013 permissive version 1.1",
+        "software foundation"
+    ],
+    "LiLiQ-R-1.1": [
+        "licence libre du qu\u00e9bec \u2013 r\u00e9ciprocit\u00e9 version 1.1",
+        "liliq-r-1.1",
+        "software foundation"
+    ],
+    "LiLiQ-Rplus-1.1": [
+        "licence libre du qu\u00e9bec \u2013 r\u00e9ciprocit\u00e9 forte version 1.1",
+        "liliq-rplus-1.1",
+        "software foundation"
+    ],
+    "Linux-man-pages-1-para": [
+        "linux man-pages - 1 paragraph",
+        "linux-man-pages-1-para"
+    ],
+    "Linux-man-pages-copyleft": [
+        "linux man-pages copyleft",
+        "linux-man-pages-copyleft"
+    ],
+    "Linux-man-pages-copyleft-2-para": [
+        "linux man-pages copyleft - 2 paragraphs",
+        "linux-man-pages-copyleft-2-para"
+    ],
+    "Linux-man-pages-copyleft-var": [
+        "linux man-pages copyleft variant",
+        "linux-man-pages-copyleft-var"
+    ],
+    "Linux-OpenIB": [
+        "linux kernel variant of openib.org license",
+        "linux-openib"
+    ],
+    "LOOP": [
+        "loop",
+        "common lisp loop license"
+    ],
+    "LPD-document": [
+        "lpd-document",
+        "lpd documentation license"
+    ],
+    "LPL-1.0": [
+        "lucent public license version 1.0",
+        "lpl-1.0"
+    ],
+    "LPL-1.02": [
+        "lpl-1.02",
+        "lucent public license v1.02"
+    ],
+    "LPPL-1.0": [
+        "latex project public license v1.0",
+        "lppl-1.0"
+    ],
+    "LPPL-1.1": [
+        "lppl-1.1",
+        "latex project public license v1.1",
+        "http://www.latex-project.org/lppl.txt"
+    ],
+    "LPPL-1.2": [
+        "lppl-1.2",
+        "latex project public license v1.2",
+        "http://www.latex-project.org/lppl.txt"
+    ],
+    "LPPL-1.3a": [
+        "lppl-1.3a",
+        "latex project public license v1.3a",
+        "http://www.latex-project.org/lppl.txt"
+    ],
+    "LPPL-1.3c": [
+        "latex project public license v1.3c",
+        "lppl-1.3c",
+        "http://www.latex-project.org/lppl.txt"
+    ],
+    "lsof": [
+        "lsof",
+        "research foundation",
+        "lsof license"
+    ],
+    "Lucida-Bitmap-Fonts": [
+        "lucida-bitmap-fonts",
+        "lucida bitmap fonts license"
+    ],
+    "LZMA-SDK-9.11-to-9.20": [
+        "lzma sdk license (versions 9.11 to 9.20)",
+        "lzma-sdk-9.11-to-9.20"
+    ],
+    "LZMA-SDK-9.22": [
+        "lzma sdk license (versions 9.22 and beyond)",
+        "lzma-sdk-9.22"
+    ],
+    "Mackerras-3-Clause": [
+        "mackerras 3-clause license",
+        "mackerras-3-clause"
+    ],
+    "Mackerras-3-Clause-acknowledgment": [
+        "mackerras-3-clause-acknowledgment",
+        "mackerras 3-clause - acknowledgment variant"
+    ],
+    "magaz": [
+        "magaz license",
+        "magaz"
+    ],
+    "mailprio": [
+        "mailprio",
+        "mailprio license"
+    ],
+    "MakeIndex": [
+        "makeindex license",
+        "makeindex"
+    ],
+    "Martin-Birgmeier": [
+        "martin-birgmeier",
+        "martin birgmeier license"
+    ],
+    "McPhee-slideshow": [
+        "mcphee-slideshow",
+        "mcphee slideshow license"
+    ],
+    "metamail": [
+        "metamail license",
+        "metamail"
+    ],
+    "Minpack": [
+        "minpack license",
+        "minpack"
+    ],
+    "MirOS": [
+        "the miros licence",
+        "miros"
+    ],
+    "MIT": [
+        "mit",
+        "mit license"
+    ],
+    "MIT-0": [
+        "mit no attribution",
+        "mit-0"
+    ],
+    "MIT-advertising": [
+        "mit-advertising",
+        "enlightenment license (e16)"
+    ],
+    "MIT-CMU": [
+        "mit-cmu",
+        "cmu license"
+    ],
+    "MIT-enna": [
+        "enna license",
+        "mit-enna"
+    ],
+    "MIT-feh": [
+        "feh license",
+        "mit-feh"
+    ],
+    "MIT-Festival": [
+        "mit-festival",
+        "mit festival variant"
+    ],
+    "MIT-Khronos-old": [
+        "mit khronos - old variant",
+        "mit-khronos-old",
+        "https://www.khronos.org/registry/"
+    ],
+    "MIT-Modern-Variant": [
+        "mit-modern-variant",
+        "mit license modern variant"
+    ],
+    "MIT-open-group": [
+        "mit-open-group",
+        "mit open group variant"
+    ],
+    "MIT-testregex": [
+        "mit-testregex",
+        "mit testregex variant"
+    ],
+    "MIT-Wu": [
+        "mit-wu",
+        "mit tom wu variant"
+    ],
+    "MITNFA": [
+        "mit +no-false-attribs license",
+        "mitnfa"
+    ],
+    "MMIXware": [
+        "mmixware",
+        "mmixware license"
+    ],
+    "Motosoto": [
+        "motosoto",
+        "motosoto license"
+    ],
+    "MPEG-SSG": [
+        "mpeg-ssg",
+        "mpeg software simulation"
+    ],
+    "mpi-permissive": [
+        "mpi permissive license",
+        "mpi-permissive"
+    ],
+    "mpich2": [
+        "mpich2",
+        "mpich2 license"
+    ],
+    "MPL-1.0": [
+        "http://www.mozilla.org/mpl/",
+        "mozilla public license 1.0",
+        "mpl-1.0"
+    ],
+    "MPL-1.1": [
+        "mozilla public license 1.1",
+        "http://www.mozilla.org/mpl/",
+        "mpl-1.1"
+    ],
+    "MPL-2.0": [
+        "mpl-2.0",
+        "https://mozilla.org/mpl/2.0/.",
+        "mozilla foundation",
+        "mozilla public license 2.0"
+    ],
+    "MPL-2.0-no-copyleft-exception": [
+        "https://mozilla.org/mpl/2.0/.",
+        "mpl-2.0-no-copyleft-exception",
+        "mozilla foundation",
+        "mozilla public license 2.0 (no copyleft exception)"
+    ],
+    "mplus": [
+        "mplus font license",
+        "mplus"
+    ],
+    "MS-LPL": [
+        "microsoft limited public license",
+        "ms-lpl"
+    ],
+    "MS-PL": [
+        "microsoft public license",
+        "ms-pl"
+    ],
+    "MS-RL": [
+        "microsoft reciprocal license",
+        "ms-rl"
+    ],
+    "MTLL": [
+        "matrix template library license",
+        "mtll"
+    ],
+    "MulanPSL-1.0": [
+        "http://license.coscl.org.cn/mulanpsl",
+        "mulanpsl-1.0",
+        "mulan permissive software license, version 1"
+    ],
+    "MulanPSL-2.0": [
+        "mulan permissive software license, version 2",
+        "mulanpsl-2.0",
+        "http://license.coscl.org.cn/mulanpsl2"
+    ],
+    "Multics": [
+        "multics license",
+        "multics"
+    ],
+    "Mup": [
+        "mup",
+        "mup license"
+    ],
+    "NAIST-2003": [
+        "naist-2003",
+        "nara institute of science and technology license (2003)"
+    ],
+    "NASA-1.3": [
+        "http://___",
+        "nasa-1.3",
+        "nasa open source agreement 1.3"
+    ],
+    "Naumen": [
+        "naumen public license",
+        "naumen"
+    ],
+    "NBPL-1.0": [
+        "net boolean public license v1",
+        "nbpl-1.0"
+    ],
+    "NCBI-PD": [
+        "ncbi-pd",
+        "ncbi public domain notice"
+    ],
+    "NCGL-UK-2.0": [
+        "non-commercial government licence",
+        "ncgl-uk-2.0"
+    ],
+    "NCL": [
+        "ncl source code license",
+        "ncl"
+    ],
+    "NCSA": [
+        "university of illinois/ncsa open source license",
+        "ncsa"
+    ],
+    "Net-SNMP": [
+        "net-snmp",
+        "net-snmp license"
+    ],
+    "NetCDF": [
+        "netcdf",
+        "netcdf license"
+    ],
+    "Newsletr": [
+        "newsletr",
+        "newsletr license"
+    ],
+    "NGPL": [
+        "ngpl",
+        "nethack general public license"
+    ],
+    "NICTA-1.0": [
+        "nicta public software license, version 1.0",
+        "nicta-1.0"
+    ],
+    "NIST-PD": [
+        "nist public domain notice",
+        "nist-pd"
+    ],
+    "NIST-PD-fallback": [
+        "nist-pd-fallback",
+        "nist public domain notice with license fallback"
+    ],
+    "NIST-Software": [
+        "nist software license",
+        "nist-software"
+    ],
+    "NLOD-1.0": [
+        "nlod-1.0",
+        "norwegian licence for open government data (nlod) 1.0"
+    ],
+    "NLOD-2.0": [
+        "nlod-2.0",
+        "norwegian licence for open government data (nlod) 2.0"
+    ],
+    "NLPL": [
+        "no limit public license",
+        "nlpl"
+    ],
+    "Nokia": [
+        "nokia",
+        "nokia open source license"
+    ],
+    "NOSL": [
+        "netizen open source license",
+        "nosl",
+        "http://netizen.com.au/licenses/nopl/"
+    ],
+    "Noweb": [
+        "noweb license",
+        "noweb",
+        "software foundation"
+    ],
+    "NPL-1.0": [
+        "netscape public license v1.0",
+        "npl-1.0",
+        "http://www.mozilla.org/npl/"
+    ],
+    "NPL-1.1": [
+        "http://www.mozilla.org/mpl/",
+        "http://www.mozilla.org/npl/",
+        "netscape public license v1.1",
+        "npl-1.1"
+    ],
+    "NPOSL-3.0": [
+        "nposl-3.0",
+        "non-profit open software license 3.0"
+    ],
+    "NRL": [
+        "nrl",
+        "nrl license"
+    ],
+    "NTP": [
+        "ntp",
+        "ntp license"
+    ],
+    "NTP-0": [
+        "ntp no attribution",
+        "ntp-0"
+    ],
+    "Nunit": [
+        "nunit",
+        "nunit license"
+    ],
+    "O-UDA-1.0": [
+        "open use of data agreement v1.0",
+        "o-uda-1.0"
+    ],
+    "OAR": [
+        "oar license",
+        "oar"
+    ],
+    "OCCT-PL": [
+        "open cascade technology public license",
+        "occt-pl"
+    ],
+    "OCLC-2.0": [
+        "http://purl.oclc.org/oclc/research/orpl/.",
+        "http://www.oclc.org/research/.",
+        "oclc research public license 2.0",
+        "oclc-2.0"
+    ],
+    "ODbL-1.0": [
+        "odbl-1.0",
+        "open data commons open database license v1.0"
+    ],
+    "ODC-By-1.0": [
+        "open data commons attribution license v1.0",
+        "odc-by-1.0"
+    ],
+    "OFFIS": [
+        "offis license",
+        "offis"
+    ],
+    "OFL-1.0": [
+        "sil open font license 1.0",
+        "ofl-1.0"
+    ],
+    "OFL-1.0-no-RFN": [
+        "ofl-1.0-no-rfn",
+        "sil open font license 1.0 with no reserved font name"
+    ],
+    "OFL-1.0-RFN": [
+        "sil open font license 1.0 with reserved font name",
+        "ofl-1.0-rfn"
+    ],
+    "OFL-1.1": [
+        "ofl-1.1",
+        "sil open font license 1.1"
+    ],
+    "OFL-1.1-no-RFN": [
+        "ofl-1.1-no-rfn",
+        "sil open font license 1.1 with no reserved font name"
+    ],
+    "OFL-1.1-RFN": [
+        "sil open font license 1.1 with reserved font name",
+        "ofl-1.1-rfn"
+    ],
+    "OGC-1.0": [
+        "ogc-1.0",
+        "http://www.ogc.org/ogc/legal",
+        "ogc software license, version 1.0"
+    ],
+    "OGDL-Taiwan-1.0": [
+        "taiwan open government data license, version 1.0",
+        "ogdl-taiwan-1.0",
+        "https://data.gov.tw/license"
+    ],
+    "OGL-Canada-2.0": [
+        "open government licence - canada",
+        "ogl-canada-2.0"
+    ],
+    "OGL-UK-1.0": [
+        "ogl-uk-1.0",
+        "open government licence v1.0"
+    ],
+    "OGL-UK-2.0": [
+        "ogl-uk-2.0",
+        "open government licence v2.0"
+    ],
+    "OGL-UK-3.0": [
+        "open government licence v3.0",
+        "ogl-uk-3.0"
+    ],
+    "OGTSL": [
+        "open group test suite license",
+        "ogtsl"
+    ],
+    "OLDAP-1.1": [
+        "oldap-1.1",
+        "openldap foundation",
+        "open ldap public license v1.1"
+    ],
+    "OLDAP-1.2": [
+        "oldap-1.2",
+        "openldap foundation",
+        "open ldap public license v1.2"
+    ],
+    "OLDAP-1.3": [
+        "open ldap public license v1.3",
+        "oldap-1.3",
+        "openldap foundation"
+    ],
+    "OLDAP-1.4": [
+        "oldap-1.4",
+        "openldap foundation",
+        "open ldap public license v1.4"
+    ],
+    "OLDAP-2.0": [
+        "contact foundation",
+        "openldap foundation",
+        "openldap foundation",
+        "open ldap public license v2.0 (or possibly 2.0a and 2.0b)",
+        "http://www.openldap.org/).",
+        "oldap-2.0"
+    ],
+    "OLDAP-2.0.1": [
+        "open ldap public license v2.0.1",
+        "contact foundation",
+        "oldap-2.0.1",
+        "openldap foundation",
+        "openldap foundation",
+        "http://www.openldap.org/)."
+    ],
+    "OLDAP-2.1": [
+        "contact foundation",
+        "open ldap public license v2.1",
+        "oldap-2.1",
+        "openldap foundation",
+        "openldap foundation",
+        "http://www.openldap.org/)."
+    ],
+    "OLDAP-2.2": [
+        "open ldap public license v2.2",
+        "oldap-2.2",
+        "openldap foundation",
+        "openldap foundation",
+        "http://www.openldap.org/)."
+    ],
+    "OLDAP-2.2.1": [
+        "oldap-2.2.1",
+        "openldap foundation",
+        "openldap foundation",
+        "http://www.openldap.org/).",
+        "open ldap public license v2.2.1"
+    ],
+    "OLDAP-2.2.2": [
+        "oldap-2.2.2",
+        "openldap foundation",
+        "openldap foundation",
+        "http://www.openldap.org/).",
+        "open ldap public license 2.2.2"
+    ],
+    "OLDAP-2.3": [
+        "oldap-2.3",
+        "openldap foundation",
+        "open ldap public license v2.3",
+        "openldap foundation",
+        "http://www.openldap.org/)."
+    ],
+    "OLDAP-2.4": [
+        "openldap foundation",
+        "open ldap public license v2.4",
+        "openldap foundation",
+        "oldap-2.4"
+    ],
+    "OLDAP-2.5": [
+        "openldap foundation",
+        "oldap-2.5",
+        "openldap foundation",
+        "open ldap public license v2.5"
+    ],
+    "OLDAP-2.6": [
+        "openldap foundation",
+        "open ldap public license v2.6",
+        "openldap foundation",
+        "oldap-2.6"
+    ],
+    "OLDAP-2.7": [
+        "openldap foundation",
+        "open ldap public license v2.7",
+        "oldap-2.7",
+        "openldap foundation"
+    ],
+    "OLDAP-2.8": [
+        "openldap foundation",
+        "open ldap public license v2.8",
+        "oldap-2.8",
+        "openldap foundation"
+    ],
+    "OLFL-1.3": [
+        "https://www.openlogisticsfoundation.org/licenses/",
+        "logistics foundation",
+        "open logistics foundation license version 1.3",
+        "olfl-1.3"
+    ],
+    "OML": [
+        "open market license",
+        "oml"
+    ],
+    "OpenPBS-2.3": [
+        "openpbs-2.3",
+        "openpbs v2.3 software license"
+    ],
+    "OpenSSL": [
+        "http://www.openssl.org/)\"",
+        "openssl",
+        "openssl license"
+    ],
+    "OpenSSL-standalone": [
+        "openssl-standalone",
+        "http://www.openssl.org/)\"",
+        "openssl license - standalone"
+    ],
+    "OpenVision": [
+        "openvision license",
+        "openvision"
+    ],
+    "OPL-1.0": [
+        "opl-1.0",
+        "open public license v1.0"
+    ],
+    "OPL-UK-3.0": [
+        "opl-uk-3.0",
+        "united    kingdom open parliament licence v3.0"
+    ],
+    "OPUBL-1.0": [
+        "opubl-1.0",
+        "http://www.opencontent.org/openpub/).",
+        "open publication license v1.0",
+        "http://works.opencontent.org/."
+    ],
+    "OSET-PL-2.1": [
+        "voting foundation",
+        "technology foundation",
+        "technology foundation",
+        "oset foundation",
+        "oset public license version 2.1",
+        "osdv foundation",
+        "oset-pl-2.1"
+    ],
+    "OSL-1.0": [
+        "osl-1.0",
+        "open software license 1.0"
+    ],
+    "OSL-1.1": [
+        "osl-1.1",
+        "open software license 1.1"
+    ],
+    "OSL-2.0": [
+        "open software license 2.0",
+        "osl-2.0"
+    ],
+    "OSL-2.1": [
+        "osl-2.1",
+        "open software license 2.1"
+    ],
+    "OSL-3.0": [
+        "osl-3.0",
+        "open software license 3.0"
+    ],
+    "PADL": [
+        "padl",
+        "padl license"
+    ],
+    "Parity-6.0.0": [
+        "the parity public license 6.0.0",
+        "https://example.com/sourcecode",
+        "parity-6.0.0"
+    ],
+    "Parity-7.0.0": [
+        "parity-7.0.0",
+        "the parity public license 7.0.0",
+        "https://spdx.org/licenses/mit.html),",
+        "https://github.com/licensezero/licensezero.com",
+        "https://www.apache.org/licenses/license-2.0.html),",
+        "https://blueoakcouncil.org/license/1.0.0),",
+        "https://spdx.org/licenses/bsd-2-clause.html)."
+    ],
+    "PDDL-1.0": [
+        "pddl-1.0",
+        "open data commons public domain dedication & license 1.0"
+    ],
+    "PHP-3.0": [
+        "http://www.php.net>.",
+        "php license v3.0",
+        "php-3.0",
+        "http://www.zend.com>.",
+        "http://www.php.net/>\"."
+    ],
+    "PHP-3.01": [
+        "http://www.php.net>.",
+        "http://www.php.net/software/>\".",
+        "php license v3.01",
+        "php-3.01",
+        "http://www.zend.com>."
+    ],
+    "Pixar": [
+        "pixar license",
+        "pixar"
+    ],
+    "pkgconf": [
+        "pkgconf license",
+        "pkgconf"
+    ],
+    "Plexus": [
+        "plexus classworlds license",
+        "http://classworlds.codehaus.org/).",
+        "plexus"
+    ],
+    "pnmstitch": [
+        "pnmstitch license",
+        "pnmstitch"
+    ],
+    "PolyForm-Noncommercial-1.0.0": [
+        "polyform noncommercial license 1.0.0",
+        "http://example.com)",
+        "polyform-noncommercial-1.0.0",
+        "https://polyformproject.org/licenses/noncommercial/1.0.0>"
+    ],
+    "PolyForm-Small-Business-1.0.0": [
+        "http://example.com)",
+        "polyform small business license 1.0.0",
+        "polyform-small-business-1.0.0",
+        "https://polyformproject.org/licenses/small-business/1.0.0>"
+    ],
+    "PostgreSQL": [
+        "postgresql license",
+        "postgresql"
+    ],
+    "PPL": [
+        "peer production license",
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode.",
+        "ppl"
+    ],
+    "PSF-2.0": [
+        "psf-2.0",
+        "software foundation",
+        "python software foundation license 2.0",
+        "software foundation"
+    ],
+    "psfrag": [
+        "psfrag",
+        "psfrag license"
+    ],
+    "psutils": [
+        "psutils",
+        "psutils license"
+    ],
+    "Python-2.0": [
+        "python-2.0",
+        "http://hdl.handle.net/1895.22/1011\".",
+        "software foundation",
+        "software foundation",
+        "python license 2.0",
+        "http://www.pythonlabs.com/logos.html"
+    ],
+    "Python-2.0.1": [
+        "http://hdl.handle.net/1895.22/1013\".",
+        "software foundation",
+        "python license 2.0.1",
+        "software foundation",
+        "python-2.0.1",
+        "http://www.pythonlabs.com/logos.html"
+    ],
+    "python-ldap": [
+        "python-ldap",
+        "python ldap license"
+    ],
+    "Qhull": [
+        "qhull",
+        "qhull license"
+    ],
+    "QPL-1.0": [
+        "q public license 1.0",
+        "qpl-1.0"
+    ],
+    "QPL-1.0-INRIA-2004": [
+        "qpl-1.0-inria-2004",
+        "q public license 1.0 - inria 2004 variant"
+    ],
+    "radvd": [
+        "radvd",
+        "radvd license"
+    ],
+    "Rdisc": [
+        "rdisc",
+        "rdisc license"
+    ],
+    "RHeCos-1.1": [
+        "http://www.redhat.com/).",
+        "red hat ecos public license v1.1",
+        "http://sourceware.cygnus.com/ecos/)",
+        "http://www.redhat.com/",
+        "rhecos-1.1"
+    ],
+    "RPL-1.1": [
+        "http://www.technicalpursuit.com.",
+        "rpl-1.1",
+        "reciprocal public license 1.1"
+    ],
+    "RPL-1.5": [
+        "rpl-1.5",
+        "reciprocal public license 1.5"
+    ],
+    "RPSL-1.0": [
+        "software foundation",
+        "https://www.helixcommunity.org/content/rpsl",
+        "rpsl-1.0",
+        "realnetworks public source license v1.0",
+        "https://www.helixcommunity.org/content/complicense",
+        "https://www.helixcommunity.org/content/rcsl,"
+    ],
+    "RSA-MD": [
+        "rsa-md",
+        "rsa message-digest license"
+    ],
+    "RSCPL": [
+        "rscpl",
+        "ricoh source code public license",
+        "http://www.risource.org/rpl"
+    ],
+    "Ruby": [
+        "ruby",
+        "ruby license"
+    ],
+    "Ruby-pty": [
+        "ruby-pty",
+        "ruby pty extension license"
+    ],
+    "SAX-PD": [
+        "sax-pd",
+        "sax public domain notice"
+    ],
+    "SAX-PD-2.0": [
+        "sax-pd-2.0",
+        "sax public domain notice 2.0"
+    ],
+    "Saxpath": [
+        "http://www.saxpath.org/",
+        "saxpath license",
+        "saxpath",
+        "http://www.saxpath.org/).\""
+    ],
+    "SCEA": [
+        "scea",
+        "http://research.scea.com/scea_shared_source_license.html",
+        "scea shared source license"
+    ],
+    "SchemeReport": [
+        "scheme language report license",
+        "schemereport"
+    ],
+    "Sendmail": [
+        "sendmail license",
+        "sendmail"
+    ],
+    "Sendmail-8.23": [
+        "sendmail license 8.23",
+        "sendmail-8.23"
+    ],
+    "SGI-B-1.0": [
+        "sgi free software license b v1.0",
+        "http://oss.sgi.com/projects/freeb",
+        "sgi-b-1.0"
+    ],
+    "SGI-B-1.1": [
+        "sgi-b-1.1",
+        "sgi free software license b v1.1",
+        "http://oss.sgi.com/projects/freeb"
+    ],
+    "SGI-B-2.0": [
+        "sgi-b-2.0",
+        "http://oss.sgi.com/projects/freeb/",
+        "sgi free software license b v2.0"
+    ],
+    "SGI-OpenGL": [
+        "sgi-opengl",
+        "sgi opengl license"
+    ],
+    "SGP4": [
+        "sgp4 permission notice",
+        "sgp4"
+    ],
+    "SHL-0.5": [
+        "shl-0.5",
+        "apache foundation",
+        "solderpad hardware license v0.5",
+        "http://solderpad.org/licenses/shl-0.5.",
+        "http://www.apache.org/licenses/license-2.0."
+    ],
+    "SHL-0.51": [
+        "solderpad hardware license, version 0.51",
+        "apache foundation",
+        "shl-0.51",
+        "http://www.apache.org/licenses/license-2.0.",
+        "http://solderpad.org/licenses/shl-0.51."
+    ],
+    "SimPL-2.0": [
+        "simpl-2.0",
+        "simple public license 2.0"
+    ],
+    "SISSL": [
+        "sissl",
+        "sun industry standards source license v1.1",
+        "http://xml.openoffice.org",
+        "http://api.openoffice.org"
+    ],
+    "SISSL-1.2": [
+        "sun industry standards source license v1.2",
+        "sissl-1.2"
+    ],
+    "SL": [
+        "sl",
+        "sl license"
+    ],
+    "Sleepycat": [
+        "sleepycat",
+        "sleepycat license"
+    ],
+    "SMLNJ": [
+        "smlnj",
+        "standard ml of new jersey license"
+    ],
+    "SMPPL": [
+        "secure messaging protocol public license",
+        "smppl"
+    ],
+    "SNIA": [
+        "snia",
+        "snia public license 1.1",
+        "http://www.snia.org/smi/developers/open_source/"
+    ],
+    "snprintf": [
+        "snprintf",
+        "snprintf license"
+    ],
+    "softSurfer": [
+        "softsurfer license",
+        "softsurfer"
+    ],
+    "Soundex": [
+        "soundex",
+        "soundex license"
+    ],
+    "Spencer-86": [
+        "spencer-86",
+        "spencer license 86"
+    ],
+    "Spencer-94": [
+        "spencer-94",
+        "spencer license 94"
+    ],
+    "Spencer-99": [
+        "spencer license 99",
+        "spencer-99"
+    ],
+    "SPL-1.0": [
+        "spl-1.0",
+        "sun public license v1.0",
+        "http://www.sun.com/"
+    ],
+    "ssh-keyscan": [
+        "ssh-keyscan license",
+        "ssh-keyscan"
+    ],
+    "SSH-OpenSSH": [
+        "http://www.cs.hut.fi/crypto\".",
+        "ssh openssh license",
+        "ssh-openssh"
+    ],
+    "SSH-short": [
+        "ssh-short",
+        "ssh short notice"
+    ],
+    "SSLeay-standalone": [
+        "ssleay license - standalone",
+        "ssleay-standalone"
+    ],
+    "SSPL-1.0": [
+        "server side public license, v 1",
+        "sspl-1.0"
+    ],
+    "StandardML-NJ": [
+        "standard ml of new jersey license",
+        "standardml-nj"
+    ],
+    "SugarCRM-1.1.3": [
+        "http://www.mozilla.org/mpl/mpl-1.1.html",
+        "http://www.sugarcrm.com",
+        "http://www.sugarcrm.com/spl",
+        "sugarcrm-1.1.3",
+        "http://www.sugarforge.org.",
+        "sugarcrm public license v1.1.3"
+    ],
+    "Sun-PPP": [
+        "sun ppp license",
+        "sun-ppp"
+    ],
+    "Sun-PPP-2000": [
+        "sun ppp license (2000)",
+        "sun-ppp-2000"
+    ],
+    "SunPro": [
+        "sunpro",
+        "sunpro license"
+    ],
+    "SWL": [
+        "scheme widget library (swl) software license agreement",
+        "swl"
+    ],
+    "swrule": [
+        "swrule",
+        "swrule license"
+    ],
+    "Symlinks": [
+        "symlinks",
+        "symlinks license"
+    ],
+    "TAPR-OHL-1.0": [
+        "http://www.tapr.org/ohl",
+        "tapr-ohl-1.0",
+        "tapr open hardware license v1.0"
+    ],
+    "TCL": [
+        "tcl",
+        "tcl/tk license"
+    ],
+    "TCP-wrappers": [
+        "tcp-wrappers",
+        "tcp wrappers license"
+    ],
+    "TermReadKey": [
+        "termreadkey license",
+        "termreadkey"
+    ],
+    "TGPPL-1.0": [
+        "tgppl-1.0",
+        "transitive grace period public licence 1.0"
+    ],
+    "threeparttable": [
+        "threeparttable license",
+        "threeparttable"
+    ],
+    "TMate": [
+        "tmate open source license",
+        "tmate"
+    ],
+    "TORQUE-1.1": [
+        "torque-1.1",
+        "http://www.pbsworks.com/reslibsearchresult.aspx?keywords=openpbs&industry=all&pro",
+        "torque v2.5+ software license v1.1",
+        "http://www.supercluster.org/mailman/listinfo/torqueusers."
+    ],
+    "TOSL": [
+        "trusster open source license",
+        "tosl"
+    ],
+    "TPDL": [
+        "time::parsedate license",
+        "tpdl"
+    ],
+    "TPL-1.0": [
+        "thor public license 1.0",
+        "tpl-1.0"
+    ],
+    "TTWL": [
+        "ttwl",
+        "text-tabs+wrap license"
+    ],
+    "TTYP0": [
+        "ttyp0",
+        "ttyp0 license"
+    ],
+    "TU-Berlin-1.0": [
+        "technische universitaet berlin license 1.0",
+        "tu-berlin-1.0"
+    ],
+    "TU-Berlin-2.0": [
+        "tu-berlin-2.0",
+        "technische universitaet berlin license 2.0"
+    ],
+    "Ubuntu-font-1.0": [
+        "ubuntu font licence v1.0",
+        "ubuntu-font-1.0"
+    ],
+    "UCAR": [
+        "ucar license",
+        "http://www.unidata.ucar.edu>.",
+        "ucar"
+    ],
+    "UCL-1.0": [
+        "upstream compatibility license v1.0",
+        "ucl-1.0"
+    ],
+    "ulem": [
+        "ulem license",
+        "ulem"
+    ],
+    "UMich-Merit": [
+        "michigan/merit networks license",
+        "umich-merit"
+    ],
+    "Unicode-3.0": [
+        "unicode-3.0",
+        "unicode license v3"
+    ],
+    "Unicode-DFS-2015": [
+        "http://www.unicode.org/cldr/data/.",
+        "unicode license agreement - data files and software (2015)",
+        "http://www.unicode.org/copyright.html.",
+        "http://www.unicode.org/public/,",
+        "http://www.unicode.org/reports/,",
+        "unicode-dfs-2015",
+        "http://www.unicode.org/public/."
+    ],
+    "Unicode-DFS-2016": [
+        "http://www.unicode.org/utility/trac/browser/.",
+        "http://www.unicode.org/cldr/data/,",
+        "http://www.unicode.org/copyright.html.",
+        "http://www.unicode.org/public/,",
+        "http://www.unicode.org/reports/,",
+        "unicode-dfs-2016",
+        "unicode license agreement - data files and software (2016)",
+        "http://source.icu-project.org/repos/icu/,",
+        "http://www.unicode.org/public/."
+    ],
+    "Unicode-TOU": [
+        "unicode terms of use",
+        "unicode-tou"
+    ],
+    "UnixCrypt": [
+        "unixcrypt license",
+        "unixcrypt"
+    ],
+    "Unlicense": [
+        "unlicense",
+        "the unlicense",
+        "http://unlicense.org/>"
+    ],
+    "UPL-1.0": [
+        "upl-1.0",
+        "universal permissive license v1.0"
+    ],
+    "URT-RLE": [
+        "urt-rle",
+        "utah raster toolkit run length encoded license"
+    ],
+    "Vim": [
+        "vim",
+        "vim license"
+    ],
+    "VOSTROM": [
+        "vostrom",
+        "vostrom public license for open source"
+    ],
+    "VSL-1.0": [
+        "vovida software license v1.0",
+        "vsl-1.0"
+    ],
+    "W3C": [
+        "http://www.w3.org/consortium/legal/2002/copyright-software-20021231",
+        "w3c software notice and license (2002-12-31)",
+        "w3c",
+        "software foundation"
+    ],
+    "W3C-19980720": [
+        "http://www.w3.org/consortium/legal/\"",
+        "w3c-19980720",
+        "http://www.w3.org/consortium/legal/",
+        "w3c software notice and license (1998-07-20)"
+    ],
+    "W3C-20150513": [
+        "w3c software notice and document license (2015-05-13)",
+        "w3c-20150513"
+    ],
+    "w3m": [
+        "w3m license",
+        "w3m"
+    ],
+    "Watcom-1.0": [
+        "sybase open watcom public license 1.0",
+        "watcom-1.0"
+    ],
+    "Widget-Workshop": [
+        "widget workshop license",
+        "widget-workshop"
+    ],
+    "Wsuipa": [
+        "wsuipa license",
+        "wsuipa"
+    ],
+    "WTFPL": [
+        "do what the f*ck you want to public license",
+        "wtfpl"
+    ],
+    "wxWindows": [
+        "wxwindows library license",
+        "wxwindows"
+    ],
+    "X11": [
+        "x11",
+        "x11 license"
+    ],
+    "X11-distribute-modifications-variant": [
+        "x11-distribute-modifications-variant",
+        "x11 license distribution modification variant"
+    ],
+    "X11-swapped": [
+        "x11-swapped",
+        "x11 swapped final paragraphs"
+    ],
+    "Xdebug-1.03": [
+        "xdebug-1.03",
+        "https://xdebug.org>.",
+        "xdebug license v 1.03",
+        "https://xdebug.org/>\"."
+    ],
+    "Xerox": [
+        "xerox license",
+        "xerox"
+    ],
+    "Xfig": [
+        "xfig license",
+        "xfig"
+    ],
+    "XFree86-1.1": [
+        "http://www.xfree86.org/)",
+        "xfree86 license 1.1",
+        "xfree86-1.1"
+    ],
+    "xinetd": [
+        "xinetd license",
+        "xinetd"
+    ],
+    "xkeyboard-config-Zinoviev": [
+        "xkeyboard-config zinoviev license",
+        "xkeyboard-config-zinoviev"
+    ],
+    "xlock": [
+        "xlock",
+        "xlock license"
+    ],
+    "Xnet": [
+        "x.net license",
+        "xnet"
+    ],
+    "xpp": [
+        "xpp",
+        "http://www.extreme.indiana.edu/.",
+        "http://www.extreme.indiana.edu/\"",
+        "xpp license"
+    ],
+    "XSkat": [
+        "xskat license",
+        "xskat"
+    ],
+    "xzoom": [
+        "xzoom license",
+        "xzoom"
+    ],
+    "YPL-1.0": [
+        "ypl-1.0",
+        "yahoo! public license v1.0"
+    ],
+    "YPL-1.1": [
+        "yahoo! public license v1.1",
+        "ypl-1.1"
+    ],
+    "Zed": [
+        "zed license",
+        "zed"
+    ],
+    "Zeeff": [
+        "zeeff",
+        "zeeff license"
+    ],
+    "Zend-2.0": [
+        "zend-2.0",
+        "http://www.zend.com\"",
+        "zend license v2.0"
+    ],
+    "Zimbra-1.3": [
+        "zimbra public license v1.3",
+        "zimbra-1.3"
+    ],
+    "Zimbra-1.4": [
+        "zimbra-1.4",
+        "zimbra public license v1.4"
+    ],
+    "Zlib": [
+        "zlib",
+        "zlib license"
+    ],
+    "zlib-acknowledgement": [
+        "zlib/libpng license with acknowledgement",
+        "zlib-acknowledgement"
+    ],
+    "ZPL-1.1": [
+        "zope public license 1.1",
+        "zpl-1.1",
+        "http://www.zope.com/).\""
+    ],
+    "ZPL-2.0": [
+        "zpl-2.0",
+        "http://www.zope.com/marks).",
+        "zope public license 2.0",
+        "software foundation"
+    ],
+    "ZPL-2.1": [
+        "zope public license 2.1",
+        "zpl-2.1",
+        "software foundation"
+    ]
+}
