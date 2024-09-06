@@ -8,7 +8,7 @@ def cli():
     pass
 
 @click.command()
-@click.option('--publisher', default="Official SPDX Publisher", help="Publisher name for the generated data.")
+@click.option('--publisher', default="Official Rules Publisher", help="Publisher name for the generated data.")
 @click.option('--data-dir', default="data", help="Directory where JSON files will be stored.")
 def update(publisher, data_dir):
     """Download and replace SPDX licenses and generate JSON files."""
