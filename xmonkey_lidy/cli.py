@@ -9,9 +9,10 @@ def cli():
 
 @click.command()
 @click.option('--publisher', default="Official SPDX Publisher", help="Publisher name for the generated data.")
-def update(publisher):
+@click.option('--data-dir', default="data", help="Directory where JSON files will be stored.")
+def update(publisher, data_dir):
     """Download and replace SPDX licenses and generate JSON files."""
-    downloader = LicenseDownloader(publisher=publisher)
+    downloader = LicenseDownloader(publisher=publisher, data_dir=data_dir)
     downloader.download_and_update_licenses()
 
 @click.command()
@@ -23,11 +24,12 @@ def identify(file):
     click.echo(result)
 
 @click.command()
+@click.argument("file")
 @click.argument("spdx", required=False)
-def validate(spdx):
-    """Validate pattern matching for a specific SPDX or all SPDX licenses."""
+def validate(file, spdx):
+    """Validate the license file against specific or all SPDX patterns."""
     matcher = LicenseMatcher()
-    result = matcher.validate_patterns(spdx)
+    result = matcher.validate_patterns(file, spdx)
     click.echo(result)
 
 @click.command()

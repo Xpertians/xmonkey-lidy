@@ -7,18 +7,22 @@ import re
 
 class LicenseDownloader:
     SPDX_LICENSES_INDEX_URL = "https://raw.githubusercontent.com/spdx/license-list-data/main/json/licenses.json"
-    DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
     
-    def __init__(self, publisher="Official SPDX Publisher"):
+    def __init__(self, publisher="Official SPDX Publisher", data_dir="data"):
+        self.DATA_DIR = os.path.abspath(data_dir)  # Make sure the path is absolute
+        if not os.path.exists(self.DATA_DIR):
+            os.makedirs(self.DATA_DIR)
+
         self.licenses_file = os.path.join(self.DATA_DIR, "spdx_licenses.json")
         self.patterns_file = os.path.join(self.DATA_DIR, "spdx_license_patterns.json")
         self.exclusions_file = os.path.join(self.DATA_DIR, "spdx_exclusions.json")
+        self.metadata_file = os.path.join(self.DATA_DIR, "metadata.json")
         self.publisher = publisher
         self.generated_on = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     def download_and_update_licenses(self):
         """Download and replace SPDX licenses and generate new JSON files."""
-        print("Downloading SPDX license data...")
+        print(f"Downloading SPDX license data into {self.DATA_DIR}...")
         response = requests.get(self.SPDX_LICENSES_INDEX_URL)
         if response.status_code != 200:
             raise Exception(f"Failed to fetch SPDX index. Status code: {response.status_code}")

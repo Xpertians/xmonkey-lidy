@@ -49,28 +49,33 @@ class LicenseMatcher:
                 }
             }
 
-    def validate_patterns(self, spdx=None):
-        """Validate pattern matching for a specific SPDX or all SPDX licenses."""
+    def validate_patterns(self, file_path, spdx=None):
+        """Validate the license file against specific or all SPDX patterns."""
+        with open(file_path, 'r') as f:
+            text = f.read()
+
+        # Load patterns and exclusions
         license_patterns = self._load_json(self.patterns_file)["data"]
         exclusions = self._load_json(self.exclusions_file)["data"]
 
+        # If SPDX is provided, validate against a single license
         if spdx:
-            patterns = license_patterns.get(spdx, [])
+            result = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions, spdx_license=spdx)
             return {
                 "SPDX": spdx,
-                "patterns": patterns,
-                "exclusions": exclusions.get(spdx, []),
+                "result": result,
                 "publisher": self.pattern_metadata.get("publisher", "Unknown Publisher"),
                 "generated_on": self.pattern_metadata.get("generated_on", "Unknown Date")
             }
-        else:
-            return {
-                "licenses": list(license_patterns.keys()),
-                "total_patterns": sum(len(patterns) for patterns in license_patterns.values()),
-                "total_exclusions": sum(len(excls) for excls in exclusions.values()),
-                "publisher": self.pattern_metadata.get("publisher", "Unknown Publisher"),
-                "generated_on": self.pattern_metadata.get("generated_on", "Unknown Date")
-            }
+
+        # Otherwise, validate against all licenses
+        matches, debug_info = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions)
+        return {
+            "matches": matches,
+            "debug_info": debug_info,
+            "publisher": self.pattern_metadata.get("publisher", "Unknown Publisher"),
+            "generated_on": self.pattern_metadata.get("generated_on", "Unknown Date")
+        }
 
     def produce_license(self, spdx):
         """Produce a copy of the specified SPDX license."""
@@ -161,6 +166,9 @@ class LicenseMatcher:
         try:
             with open(filepath, 'r') as f:
                 data = json.load(f)
-                return data.get("metadata", {})
+                # Check if the JSON file has metadata. If it's a list, return an empty dict.
+                if isinstance(data, dict) and "metadata" in data:
+                    return data.get("metadata", {})
+                return {}
         except FileNotFoundError:
             return {}
