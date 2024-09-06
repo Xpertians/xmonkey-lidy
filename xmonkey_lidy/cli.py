@@ -2,10 +2,12 @@ import click
 from .downloader import LicenseDownloader
 from .matcher import LicenseMatcher
 
+
 @click.group()
 def cli():
     """Command-line interface for xmonkey-lidy."""
     pass
+
 
 @click.command()
 @click.option('--publisher', default="Official Rules Publisher", help="Publisher name for the generated data.")
@@ -14,6 +16,7 @@ def update(publisher, data_dir):
     """Download and replace SPDX licenses and generate JSON files."""
     downloader = LicenseDownloader(publisher=publisher, data_dir=data_dir)
     downloader.download_and_update_licenses()
+
 
 @click.command()
 @click.argument("file")
@@ -25,6 +28,7 @@ def identify(file, use_soredice_only, debug):
     result = matcher.identify_license(file, use_soredice_only=use_soredice_only, debug=debug)
     click.echo(result)
 
+
 @click.command()
 @click.argument("file")
 @click.argument("spdx", required=False)
@@ -34,6 +38,7 @@ def validate(file, spdx):
     result = matcher.validate_patterns(file, spdx)
     click.echo(result)
 
+
 @click.command()
 @click.argument("spdx")
 def produce(spdx):
@@ -41,6 +46,7 @@ def produce(spdx):
     matcher = LicenseMatcher()
     license_text = matcher.produce_license(spdx)
     click.echo(license_text)
+
 
 cli.add_command(update)
 cli.add_command(identify)

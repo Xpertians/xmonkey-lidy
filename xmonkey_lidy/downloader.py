@@ -5,9 +5,10 @@ from tqdm import tqdm
 from datetime import datetime
 import re
 
+
 class LicenseDownloader:
     SPDX_LICENSES_INDEX_URL = "https://raw.githubusercontent.com/spdx/license-list-data/main/json/licenses.json"
-    
+
     def __init__(self, publisher="Official SPDX Publisher", data_dir="data"):
         self.DATA_DIR = os.path.abspath(data_dir)  # Make sure the path is absolute
         if not os.path.exists(self.DATA_DIR):
@@ -108,8 +109,8 @@ class LicenseDownloader:
 
         # Common legal keywords to search for in license text
         keywords = [
-            'copyright', 'license', 'permission', 'warranty', 'use', 
-            'redistribution', 'modification', 'distribution', 'software', 
+            'copyright', 'license', 'permission', 'warranty', 'use',
+            'redistribution', 'modification', 'distribution', 'software',
             'disclaimer', 'liability', 'derivative', 'source code', 'patent'
         ]
 

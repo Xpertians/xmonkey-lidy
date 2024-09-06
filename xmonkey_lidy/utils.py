@@ -1,6 +1,7 @@
 import json
 import re
 
+
 class LicenseUtils:
     def match_license(self, text, licenses_file):
         """Identify the license by matching with licenses."""

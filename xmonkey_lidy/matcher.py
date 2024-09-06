@@ -3,9 +3,10 @@ import os
 import re
 from collections import Counter
 
+
 class LicenseMatcher:
     DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-    
+
     def __init__(self):
         self.licenses_file = os.path.join(self.DATA_DIR, "spdx_licenses.json")
         self.patterns_file = os.path.join(self.DATA_DIR, "spdx_license_patterns.json")
@@ -201,7 +202,6 @@ class LicenseMatcher:
                 if re.search(re.escape(pattern), text, re.IGNORECASE):
                     match_count += 1
                     matched_patterns.append(pattern)
-            
             # If matches are found, check exclusions
             if match_count > 0:
                 excluded = False
