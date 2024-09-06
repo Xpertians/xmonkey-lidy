@@ -1,6 +1,7 @@
 import json
 import os
 import re
+from collections import Counter
 
 class LicenseMatcher:
     DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
@@ -13,20 +14,50 @@ class LicenseMatcher:
         self.pattern_metadata = self._load_metadata(self.patterns_file)
         self.exclusion_metadata = self._load_metadata(self.exclusions_file)
 
-    def identify_license(self, file_path):
-        """Identify the license of a file based on patterns and Sørensen-Dice."""
+    def identify_license(self, file_path, use_soredice_only=False, debug=False, threshold=0.5):
+        """Identify the license of a file using Sørensen-Dice or fallback to pattern matching."""
         with open(file_path, 'r') as f:
             text = f.read()
 
         # Load patterns and exclusions
+        spdx_licenses = self._load_json(self.licenses_file)["data"]
         license_patterns = self._load_json(self.patterns_file)["data"]
         exclusions = self._load_json(self.exclusions_file)["data"]
 
-        # Attempt to match license using patterns and exclusions
-        matches, debug_info = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions)
+        # If using Sørensen-Dice only, skip pattern matching
+        if use_soredice_only:
+            best_match, score, debug_info = self.match_license_using_sorensen_dice(text, spdx_licenses, threshold, debug)
+            return {
+                "SPDX": best_match or "UNKNOWN",
+                "method": "soredice_proximity_score",
+                "score": score,
+                "publisher": self.license_metadata.get("publisher", "Unknown Publisher"),
+                "generated_on": self.license_metadata.get("generated_on", "Unknown Date"),
+                "debug": debug_info if debug else {}
+            }
+
+        # First try to match using Sørensen-Dice
+        best_match, score, debug_info = self.match_license_using_sorensen_dice(text, spdx_licenses, threshold, debug)
+
+        if best_match:
+            # If a match is found using Sørensen-Dice, return it
+            return {
+                "SPDX": best_match,
+                "method": "soredice_proximity_score",
+                "score": score,
+                "publisher": self.license_metadata.get("publisher", "Unknown Publisher"),
+                "generated_on": self.license_metadata.get("generated_on", "Unknown Date"),
+                "debug": debug_info if debug else {}
+            }
+
+        # If no match exceeds the threshold, fall back to pattern matching
+        print("No high similarity match found. Falling back to pattern-based search.")
+        matches, pattern_debug_info = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions)
+
+        # Filter out licenses with 0 matches
+        matches = {license_id: count for license_id, count in matches.items() if count > 0}
 
         if matches:
-            # Return the license with the most matches
             top_license = max(matches, key=matches.get)
             return {
                 "SPDX": top_license,
@@ -34,7 +65,7 @@ class LicenseMatcher:
                 "score": matches[top_license],
                 "publisher": self.pattern_metadata.get("publisher", "Unknown Publisher"),
                 "generated_on": self.pattern_metadata.get("generated_on", "Unknown Date"),
-                "debug": debug_info[top_license]
+                "debug": pattern_debug_info[top_license] if debug else {}
             }
         else:
             return {
@@ -58,34 +89,66 @@ class LicenseMatcher:
         license_patterns = self._load_json(self.patterns_file)["data"]
         exclusions = self._load_json(self.exclusions_file)["data"]
 
-        # If SPDX is provided, validate against a single license
         if spdx:
-            result = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions, spdx_license=spdx)
+            # Validate against a specific license
+            match_data = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions, spdx_license=spdx)
+            result = match_data.get(spdx, 0)
+            debug_info = match_data.get("debug", {})
             return {
                 "SPDX": spdx,
                 "result": result,
+                "debug": debug_info,
                 "publisher": self.pattern_metadata.get("publisher", "Unknown Publisher"),
                 "generated_on": self.pattern_metadata.get("generated_on", "Unknown Date")
             }
 
-        # Otherwise, validate against all licenses
+        # Validate against all licenses
         matches, debug_info = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions)
+
         return {
             "matches": matches,
-            "debug_info": debug_info,
+            "debug": debug_info,
             "publisher": self.pattern_metadata.get("publisher", "Unknown Publisher"),
             "generated_on": self.pattern_metadata.get("generated_on", "Unknown Date")
         }
 
-    def produce_license(self, spdx):
-        """Produce a copy of the specified SPDX license."""
-        with open(self.licenses_file, 'r') as f:
-            licenses = json.load(f)["data"]
 
-        for license_data in licenses:
-            if license_data['licenseId'] == spdx:
-                return license_data['licenseText']
-        return f"License {spdx} not found."
+
+    def match_license_using_sorensen_dice(self, text, spdx_licenses, threshold=0.5, debug=False):
+        """Match a text to the closest SPDX license using Sørensen-Dice."""
+        preprocessed_text = self._preprocess(text)
+        best_match = None
+        highest_score = 0.0
+        debug_info = {}
+
+        for license_data in spdx_licenses:
+            license_id = license_data['licenseId']
+            license_text = license_data.get('licenseText')
+
+            preprocessed_license = self._preprocess(license_text)
+            score = self.sorensen_dice_coefficient(preprocessed_text, preprocessed_license)
+
+            if debug:
+                debug_info[license_id] = {"score": score}
+
+            if score > highest_score:
+                highest_score = score
+                best_match = license_id
+
+        if highest_score > threshold:
+            return best_match, highest_score, debug_info
+        else:
+            return None, 0.0, debug_info
+
+    def sorensen_dice_coefficient(self, a, b):
+        """Compute Sørensen-Dice coefficient between two token sets."""
+        if not a or not b:
+            return 0.0
+        a_bigrams = Counter(zip(a, a[1:]))
+        b_bigrams = Counter(zip(b, b[1:]))
+        overlap = sum((a_bigrams & b_bigrams).values())
+        total = sum(a_bigrams.values()) + sum(b_bigrams.values())
+        return 2 * overlap / total
 
     def match_license_with_patterns_and_exclusions(self, text, license_patterns, exclusions, spdx_license=None):
         """ Match a text using license-specific patterns and apply exclusions """
@@ -110,24 +173,14 @@ class LicenseMatcher:
                     if re.search(re.escape(exclusion_pattern), text, re.IGNORECASE):
                         excluded_patterns.append(exclusion_pattern)
                 return {
-                    "SPDX": spdx_license,
-                    "method": "string_patterns",
-                    "score": match_count,
+                    spdx_license: match_count,
                     "debug": {
                         "matched_patterns": matched_patterns,
                         "excluded_patterns": excluded_patterns
                     }
                 }
-            else:
-                return {
-                    "SPDX": spdx_license,
-                    "method": "string_patterns",
-                    "score": 0,
-                    "debug": {
-                        "matched_patterns": [],
-                        "excluded_patterns": []
-                    }
-                }
+
+            return {spdx_license: 0}
 
         # Otherwise, match against all licenses
         for license_id, patterns in license_patterns.items():
@@ -155,6 +208,13 @@ class LicenseMatcher:
                     }
 
         return matches, debug
+
+    def _preprocess(self, text):
+        """Preprocess the text by normalizing and tokenizing."""
+        text = text.lower()
+        text = re.sub(r'[^a-z0-9\s]+', '', text)  # Remove non-alphanumeric characters
+        tokens = text.split()  # Split by whitespace
+        return tokens
 
     def _load_json(self, filepath):
         """Helper function to load JSON data from a file."""

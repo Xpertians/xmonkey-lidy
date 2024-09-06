@@ -17,10 +17,12 @@ def update(publisher, data_dir):
 
 @click.command()
 @click.argument("file")
-def identify(file):
+@click.option('--use-soredice-only', is_flag=True, help="Only use Sørensen-Dice for matching.")
+@click.option('--debug', is_flag=True, help="Show debug information for all licenses.")
+def identify(file, use_soredice_only, debug):
     """Identify the license using patterns or Sørensen-Dice."""
     matcher = LicenseMatcher()
-    result = matcher.identify_license(file)
+    result = matcher.identify_license(file, use_soredice_only=use_soredice_only, debug=debug)
     click.echo(result)
 
 @click.command()
