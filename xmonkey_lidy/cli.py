@@ -8,9 +8,10 @@ def cli():
     pass
 
 @click.command()
-def update():
+@click.option('--publisher', default="Official SPDX Publisher", help="Publisher name for the generated data.")
+def update(publisher):
     """Download and replace SPDX licenses and generate JSON files."""
-    downloader = LicenseDownloader()
+    downloader = LicenseDownloader(publisher=publisher)
     downloader.download_and_update_licenses()
 
 @click.command()

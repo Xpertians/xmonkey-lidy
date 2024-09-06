@@ -14,7 +14,8 @@ class LicenseDownloader:
         self.patterns_file = os.path.join(self.DATA_DIR, "spdx_license_patterns.json")
         self.exclusions_file = os.path.join(self.DATA_DIR, "spdx_exclusions.json")
         self.publisher = publisher
-    
+        self.generated_on = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     def download_and_update_licenses(self):
         """Download and replace SPDX licenses and generate new JSON files."""
         print("Downloading SPDX license data...")
@@ -58,20 +59,33 @@ class LicenseDownloader:
         exclusions = self._generate_exclusions(license_patterns, pattern_to_license)
         total_exclusions_added = sum(len(excl) for excl in exclusions.values())
 
-        # Save licenses, patterns, and exclusions
-        self._save_to_file(self.licenses_file, licenses)
-        self._save_to_file(self.patterns_file, license_patterns)
-        self._save_to_file(self.exclusions_file, exclusions)
+        # Save licenses, patterns, and exclusions with metadata
+        self._save_to_file(self.licenses_file, {
+            "metadata": {
+                "generated_on": self.generated_on,
+                "publisher": self.publisher,
+                "total_licenses_downloaded": len(licenses)
+            },
+            "data": licenses
+        })
 
-        # Generate metadata including date and publisher
-        metadata = {
-            "generated_on": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "publisher": self.publisher,
-            "total_licenses_downloaded": len(licenses),
-            "total_patterns_added": total_patterns_added,
-            "total_exclusions_added": total_exclusions_added
-        }
-        self._save_to_file(os.path.join(self.DATA_DIR, "metadata.json"), metadata)
+        self._save_to_file(self.patterns_file, {
+            "metadata": {
+                "generated_on": self.generated_on,
+                "publisher": self.publisher,
+                "total_patterns_added": total_patterns_added
+            },
+            "data": license_patterns
+        })
+
+        self._save_to_file(self.exclusions_file, {
+            "metadata": {
+                "generated_on": self.generated_on,
+                "publisher": self.publisher,
+                "total_exclusions_added": total_exclusions_added
+            },
+            "data": exclusions
+        })
 
         print(f"\nNew SPDX license JSON files have been generated at:\n"
               f"- {self.licenses_file}\n"
@@ -81,8 +95,8 @@ class LicenseDownloader:
               f"- Total licenses downloaded: {len(licenses)}\n"
               f"- Total patterns added: {total_patterns_added}\n"
               f"- Total exclusions added: {total_exclusions_added}\n"
-              f"- Generated on: {metadata['generated_on']}\n"
-              f"- Publisher: {metadata['publisher']}\n")
+              f"- Generated on: {self.generated_on}\n"
+              f"- Publisher: {self.publisher}\n")
 
     def _generate_patterns(self, license_text, license_id, license_name):
         """Generate patterns from the license text based on keywords, organizations, and URLs."""
@@ -126,5 +140,6 @@ class LicenseDownloader:
         return exclusions
 
     def _save_to_file(self, filepath, data):
+        """Helper function to save data as JSON with proper formatting."""
         with open(filepath, 'w') as f:
             json.dump(data, f, indent=4)
