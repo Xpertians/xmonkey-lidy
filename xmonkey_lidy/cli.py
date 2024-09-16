@@ -48,7 +48,18 @@ def produce(spdx):
     click.echo(license_text)
 
 
+@click.command()
+@click.argument("file")
+def extract_copyright(file):
+    """Extract copyright information from a provided text file."""
+    matcher = LicenseMatcher()
+    result = matcher.extract_copyright_info_from_file(file)
+    click.echo(result)
+
+
 cli.add_command(update)
 cli.add_command(identify)
 cli.add_command(validate)
 cli.add_command(produce)
+cli.add_command(extract_copyright)
+

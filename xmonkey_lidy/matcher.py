@@ -81,6 +81,39 @@ class LicenseMatcher:
                 }
             }
 
+    def extract_copyright_info_from_file(self, file_path):
+        """Extract copyright information from any text file."""
+        with open(file_path, 'r') as f:
+            text = f.read()
+
+        # Improved regex to avoid legal instructions, placeholders, and false positives
+        copyright_pattern = re.compile(
+            r'(?i)^\s*(copyright|\(c\)|©)\s*(?:\(?c\)?\s*)?(\d{4}(?:-\d{4})?)?\s*(?!.*(?:notice|retain|included|works|license|source|form|derivative|reproduce))(.*?)\s*(?:\.|$)', re.MULTILINE)
+
+        # Find all matches in the text
+        copyrights = re.findall(copyright_pattern, text)
+
+        # Validate and filter out placeholder strings like [yyyy] or [name of copyright owner]
+        valid_copyrights = []
+        for match in copyrights:
+            year = match[1].strip() if match[1] else "Unknown"
+            holder = match[2].strip() if match[2] else "Unknown"
+
+            # Check if the year or holder contains placeholders like YYYY or [name of copyright owner]
+            if re.search(r'\b(?:YYYY|yyyy|[Bb]rackets|name of copyright owner)\b|\[.*?\]', holder) or 'yyyy' in year:
+                continue  # Skip placeholders
+
+            valid_copyrights.append({
+                "copyright": match[0].strip(),
+                "year": year,
+                "holder": holder
+            })
+
+        if valid_copyrights:
+            return valid_copyrights
+        else:
+            return "[]"
+
     def validate_patterns(self, file_path, spdx=None):
         """Validate the license file against specific or all SPDX patterns."""
         with open(file_path, 'r') as f:
