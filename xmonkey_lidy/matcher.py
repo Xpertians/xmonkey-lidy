@@ -83,6 +83,9 @@ class LicenseMatcher:
                 }
             }
 
+    def extract_copyright_info(self, content, is_file=True):
+        return self.extract_copyright_info_from_file(content, is_file)
+
     def extract_copyright_info_from_file(self, content, is_file=True):
         """Extract copyright information from any text file."""
         if is_file:
