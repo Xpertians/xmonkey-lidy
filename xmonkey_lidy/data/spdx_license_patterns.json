@@ -2061,8 +2061,8 @@
         ],
         "CDDL-1.0": [
             "warranty",
-            "common development and distribution license 1.0",
-            "cddl-1.0",
+            "common", "development and distribution license",
+            "cddl","1.0",
             "copyright",
             "patent",
             "distribution",
@@ -2081,12 +2081,12 @@
             "distribution",
             "disclaimer",
             "modification",
-            "common development and distribution license 1.1",
+            "common", "development and distribution license 1.1",
             "use",
             "software",
             "license",
             "source code",
-            "cddl-1.1",
+            "cddl","1.1",
             "liability"
         ],
         "CDL-1.0": [
