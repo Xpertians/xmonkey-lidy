@@ -21,10 +21,13 @@ class LicenseMatcher:
         self.pattern_metadata = self._load_metadata(self.patterns_file)
         self.exclusion_metadata = self._load_metadata(self.exclusions_file)
 
-    def identify_license(self, file_path, use_soredice_only=False, debug=False, threshold=0.5):
+    def identify_license(self, content, is_file=True, use_soredice_only=False, debug=False, threshold=0.5):
         """Identify the license of a file using Sørensen-Dice or fallback to pattern matching."""
-        with open(file_path, 'r') as f:
-            text = f.read()
+        if is_file:
+            with open(content, 'r') as f:
+                text = f.read()
+        else:
+            text = content
         # Load patterns and exclusions
         spdx_licenses = self._load_json(self.licenses_file)["data"]
         license_patterns = self._load_json(self.patterns_file)["data"]
@@ -80,10 +83,13 @@ class LicenseMatcher:
                 }
             }
 
-    def extract_copyright_info_from_file(self, file_path):
+    def extract_copyright_info_from_file(self, content, is_file=True):
         """Extract copyright information from any text file."""
-        with open(file_path, 'r') as f:
-            text = f.read()
+        if is_file:
+            with open(content, 'r') as f:
+                text = f.read()
+        else:
+            text = content
         # Improved regex to avoid legal instructions, placeholders, and false positives
         copyright_pattern = re.compile(
             r'(?i)^\s*(copyright|\(c\)|©)\s*(?:\(?c\)?\s*)?(\d{4}(?:-\d{4})?)?\s*(?!.*(?:notice|retain|included|works|license|source|form|derivative|reproduce))(.*?)\s*(?:\.|$)', re.MULTILINE)
@@ -107,10 +113,13 @@ class LicenseMatcher:
         else:
             return "[]"
 
-    def validate_patterns(self, file_path, spdx=None):
+    def validate_patterns(self, content, is_file=True, spdx=None):
         """Validate the license file against specific or all SPDX patterns."""
-        with open(file_path, 'r') as f:
-            text = f.read()
+        if is_file:
+            with open(content, 'r') as f:
+                text = f.read()
+        else:
+            text = content
         # Load patterns and exclusions
         license_patterns = self._load_json(self.patterns_file)["data"]
         exclusions = self._load_json(self.exclusions_file)["data"]

@@ -42,7 +42,8 @@ def identify(file, use_soredice_only, debug):
     """Identify the license using patterns or Sørensen-Dice."""
     matcher = LicenseMatcher()
     result = matcher.identify_license(
-        file, use_soredice_only=use_soredice_only, debug=debug
+        file, True,
+        use_soredice_only=use_soredice_only, debug=debug
     )
     click.echo(result)
 
@@ -53,7 +54,7 @@ def identify(file, use_soredice_only, debug):
 def validate(file, spdx):
     """Validate the license file against specific or all SPDX patterns."""
     matcher = LicenseMatcher()
-    result = matcher.validate_patterns(file, spdx)
+    result = matcher.validate_patterns(file, True, spdx)
     click.echo(result)
 
 
@@ -71,7 +72,7 @@ def produce(spdx):
 def extract_copyright(file):
     """Extract copyright information from a provided text file."""
     matcher = LicenseMatcher()
-    result = matcher.extract_copyright_info_from_file(file)
+    result = matcher.extract_copyright_info_from_file(file, True)
     click.echo(result)
 
 
