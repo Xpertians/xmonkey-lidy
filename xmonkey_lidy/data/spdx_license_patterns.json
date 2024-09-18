@@ -2051,18 +2051,23 @@
         ],
         "CC0-1.0": [
             "copyright",
+            "v1.0",
+            "universal",
             "creative commons zero v1.0 universal",
             "patent",
             "distribution",
             "use",
             "cc0-1.0",
+            "1.0",
             "license",
             "liability"
         ],
         "CDDL-1.0": [
             "warranty",
-            "common", "development and distribution license",
-            "cddl","1.0",
+            "common",
+            "development and distribution license",
+            "cddl",
+            "1.0",
             "copyright",
             "patent",
             "distribution",
@@ -2072,7 +2077,8 @@
             "software",
             "license",
             "source code",
-            "liability"
+            "liability",
+            "1.0"
         ],
         "CDDL-1.1": [
             "warranty",
@@ -2081,19 +2087,22 @@
             "distribution",
             "disclaimer",
             "modification",
-            "common", "development and distribution license 1.1",
+            "common",
+            "development and distribution license 1.1",
             "use",
             "software",
             "license",
             "source code",
-            "cddl","1.1",
+            "cddl",
+            "1.1",
             "liability"
         ],
         "CDL-1.0": [
             "common documentation license 1.0",
             "warranty",
             "copyright",
-            "cdl-1.0",
+            "cdl",
+            "1.0",
             "permission",
             "distribution",
             "derivative",
@@ -2105,6 +2114,7 @@
             "liability"
         ],
         "CDLA-Permissive-1.0": [
+            "permissive",
             "cdla-permissive-1.0",
             "copyright",
             "distribution",
@@ -2117,10 +2127,12 @@
         ],
         "CDLA-Permissive-2.0": [
             "warranty",
+            "permissive",
             "cdla-permissive-2.0",
             "modification",
             "use",
             "license",
+            "2.0",
             "community data license agreement permissive 2.0",
             "liability"
         ],

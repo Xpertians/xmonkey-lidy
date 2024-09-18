@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="xmonkey-lidy",
-    version="1.0.10",
+    version="1.0.11",
     description="A XMonkey tool for identifying SPDX licenses.",
     author="Oscar Valenzuela B.",
     packages=find_packages(),
@@ -13,7 +13,8 @@ setup(
     install_requires=[
         "requests",
         "click",
-        "tqdm"
+        "tqdm",
+        "python-Levenshtein"
     ],
     entry_points={
         "console_scripts": [
