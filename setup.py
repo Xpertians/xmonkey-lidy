@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="xmonkey-lidy",
-    version="1.0.11",
+    version="1.0.12",
     description="A XMonkey tool for identifying SPDX licenses.",
     author="Oscar Valenzuela B.",
     packages=find_packages(),
