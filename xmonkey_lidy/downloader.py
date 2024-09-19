@@ -13,71 +13,53 @@ class LicenseDownloader:
         self.DATA_DIR = os.path.abspath(data_dir)
         if not os.path.exists(self.DATA_DIR):
             os.makedirs(self.DATA_DIR)
-        self.licenses_file = os.path.join(
-            self.DATA_DIR, "spdx_licenses.json"
-        )
-        self.patterns_file = os.path.join(
-            self.DATA_DIR, "spdx_license_patterns.json"
-        )
-        self.exclusions_file = os.path.join(
-            self.DATA_DIR, "spdx_exclusions.json"
-        )
-        self.metadata_file = os.path.join(
-            self.DATA_DIR, "metadata.json"
-        )
+        self.licenses_file = os.path.join(self.DATA_DIR, "spdx_licenses.json")
+        self.patterns_file = os.path.join(self.DATA_DIR, "spdx_license_patterns.json")
+        self.exclusions_file = os.path.join(self.DATA_DIR, "spdx_exclusions.json")
+        self.metadata_file = os.path.join(self.DATA_DIR, "metadata.json")
         self.publisher = publisher
         self.generated_on = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.total_patterns_added = 0
+        self.total_exclusions_added = 0
 
     def download_and_update_licenses(self):
         """Download and replace SPDX licenses and generate new JSON files."""
         print(f"Downloading SPDX license data into {self.DATA_DIR}...")
         response = requests.get(self.SPDX_LICENSES_INDEX_URL)
         if response.status_code != 200:
-            raise Exception(
-                f"Failed to fetch SPDX index. "
-                f"Status code: {response.status_code}"
-            )
+            raise Exception(f"Failed to fetch SPDX index. Status code: {response.status_code}")
         index_data = response.json()
         license_list = index_data['licenses']
         licenses = []
-        pattern_to_license = {}
         license_patterns = {}
-        total_patterns_added = 0
-        total_exclusions_added = 0
-        # Using tqdm to show progress while downloading each license
-        for license_info in tqdm(
-            license_list, desc="Downloading SPDX Licenses", unit="license"
-        ):
+        pattern_to_license = {}
+
+        # Download each license and extract patterns
+        for license_info in tqdm(license_list, desc="Downloading SPDX Licenses", unit="license"):
             details_url = license_info['detailsUrl']
             license_response = requests.get(details_url)
             if license_response.status_code == 200:
                 license_data = license_response.json()
-                license_text = license_data.get('licenseText')
+                license_id = license_data['licenseId']
+                license_text = license_data['licenseText']
+                license_name = license_data['name']
                 licenses.append({
                     'licenseId': license_info['licenseId'],
                     'licenseName': license_info['name'],
                     'licenseText': license_text
                 })
-                patterns = self._generate_patterns(
-                    license_text, license_info['licenseId'],
-                    license_info['name']
-                )
-                license_patterns[license_info['licenseId']] = patterns
-                total_patterns_added += len(patterns)
+                patterns = self._extract_patterns(license_text, license_name, license_id)
 
-                # Track patterns for exclusion generation
+                # Associate patterns with the license ID
+                license_patterns[license_id] = patterns
                 for pattern in patterns:
                     if pattern not in pattern_to_license:
-                        pattern_to_license[pattern] = []
-                    pattern_to_license[pattern].append(
-                        license_info['licenseId']
-                    )
+                        pattern_to_license[pattern] = set()
+                    pattern_to_license[pattern].add(license_id)
+                self.total_patterns_added += len(patterns)
 
-        # Generate exclusions based on shared patterns
-        exclusions = self._generate_exclusions(
-            license_patterns, pattern_to_license
-        )
-        total_exclusions_added = sum(len(excl) for excl in exclusions.values())
+        # Generate exclusions dynamically
+        exclusions = self._generate_exclusions(license_patterns, pattern_to_license)
 
         # Save licenses, patterns, and exclusions with metadata
         self._save_to_file(self.licenses_file, {
@@ -93,7 +75,7 @@ class LicenseDownloader:
             "metadata": {
                 "generated_on": self.generated_on,
                 "publisher": self.publisher,
-                "total_patterns_added": total_patterns_added
+                "total_patterns_added": self.total_patterns_added
             },
             "data": license_patterns
         })
@@ -102,60 +84,56 @@ class LicenseDownloader:
             "metadata": {
                 "generated_on": self.generated_on,
                 "publisher": self.publisher,
-                "total_exclusions_added": total_exclusions_added
+                "total_exclusions_added": self.total_exclusions_added
             },
             "data": exclusions
         })
+        
+        print(f"\nSPDX license patterns and exclusions have been generated.")
+        print(f"Total Patterns Added: {self.total_patterns_added}")
+        print(f"Total Exclusions Added: {self.total_exclusions_added}")
 
-        print(f"\nNew SPDX license JSON files have been generated at:\n"
-              f"- {self.licenses_file}\n"
-              f"- {self.patterns_file}\n"
-              f"- {self.exclusions_file}")
-        print(f"\nSummary:\n"
-              f"- Total licenses downloaded: {len(licenses)}\n"
-              f"- Total patterns added: {total_patterns_added}\n"
-              f"- Total exclusions added: {total_exclusions_added}\n"
-              f"- Generated on: {self.generated_on}\n"
-              f"- Publisher: {self.publisher}\n")
-
-    def _generate_patterns(self, license_text, license_id, license_name):
+    def _extract_patterns(self, license_text, license_name, license_id):
+        """Extracts minimal and unique patterns from the license text."""
         patterns = []
-
-        # Common legal keywords to search for in license text
         keywords = [
-            'copyright', 'license', 'permission', 'warranty', 'use',
-            'redistribution', 'modification', 'distribution', 'software',
-            'disclaimer', 'liability', 'derivative', 'source code', 'patent'
+            'redistribute', 'modify', 'software', 'derivative', 'patent',
+            'provided', 'without', 'consequential', 'implied', 'warranty', 
+            'arising', 'redistribution', 'license', 'copyright',
+            'source code', 'binary', 'contributor'
         ]
 
-        # Search for keywords in the license text
+        # Stop words to exclude generic legal terms
+        stop_words = {'use', 'the', 'and', 'shall', 'must', 'or', 'any'}
+
+        # Search for unique keywords in the license text
         for keyword in keywords:
             if re.search(fr'\b{keyword}\b', license_text, re.IGNORECASE):
                 patterns.append(keyword)
 
         # Extract URLs and organization names from the license text
         urls = re.findall(r'http[s]?://[^\s]+', license_text)
-        org_names = re.findall(
-            r'\b[A-Za-z]+\sFoundation\b', license_text, re.IGNORECASE
-        )
+        org_names = re.findall(r'\b[A-Za-z]+\sFoundation\b', license_text, re.IGNORECASE)
 
         # Include the license name and SPDX ID as part of the patterns
         patterns += urls + org_names + [license_name, license_id]
 
-        # Lowercase and deduplicate patterns
-        return list(set([pattern.lower() for pattern in patterns]))
+        # Deduplicate patterns, remove stop words, and ignore short strings
+        return list(set([pattern.lower() for pattern in patterns if pattern.lower() not in stop_words and len(pattern) >= 3]))
 
     def _generate_exclusions(self, license_patterns, pattern_to_license):
         exclusions = {}
         for license_id, patterns in license_patterns.items():
             exclusions[license_id] = set()
             for pattern in patterns:
-                if len(pattern_to_license[pattern]) > 1:
+                # Add to exclusion if this pattern belongs to multiple licenses
+                if len(pattern_to_license[pattern]) > 1 and len(pattern) >= 3:
                     for other_license in pattern_to_license[pattern]:
                         if other_license != license_id:
-                            exclusions[license_id].update(
-                                license_patterns[other_license]
-                            )
+                            exclusions[license_id].update(license_patterns[other_license])
+                    self.total_exclusions_added += 1
+
+            # Convert exclusions to list and reduce size by storing minimal data
             exclusions[license_id] = list(exclusions[license_id])
 
         return exclusions
