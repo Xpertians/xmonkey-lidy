@@ -225,6 +225,8 @@ class LicenseMatcher:
                 if re.search(re.escape(pattern), text, re.IGNORECASE):
                     match_count += 1
                     matched_patterns.append(pattern)
+            if match_count > 0:
+                print('license_id:', license_id, 'score:', match_count, '<>', matched_patterns)
             # If matches are found, check exclusions
             if match_count > 0:
                 excluded = False
