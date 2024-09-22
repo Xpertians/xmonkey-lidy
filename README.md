@@ -155,7 +155,7 @@ print(result)
 
 In this example, you can interact with the `LicenseMatcher` class directly and perform license identification, validation, and more within your own code.
 
-### Example of License Validation in Python Code
+### Example of License Validation
 
 ```python
 from xmonkey_lidy.matcher import LicenseMatcher
