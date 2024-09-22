@@ -217,6 +217,7 @@ class LicenseMatcher:
             return {spdx_license: 0}
 
         # Otherwise, match against all licenses
+        max_match_count = 0
         for license_id, patterns in license_patterns.items():
             match_count = 0
             matched_patterns = []
@@ -225,10 +226,8 @@ class LicenseMatcher:
                 if re.search(re.escape(pattern), text, re.IGNORECASE):
                     match_count += 1
                     matched_patterns.append(pattern)
-            if match_count > 0:
-                print('license_id:', license_id, 'score:', match_count, '<>', matched_patterns)
-            # If matches are found, check exclusions
-            if match_count > 0:
+            if match_count >= max_match_count:
+                max_match_count = match_count
                 excluded = False
                 excluded_patterns = []
                 for exclusion_pattern in exclusions.get(license_id, []):
@@ -241,6 +240,9 @@ class LicenseMatcher:
                         "matched_patterns": matched_patterns,
                         "excluded_patterns": excluded_patterns
                     }
+        sorted_matches = sorted(matches.items(), key=lambda x: x[1], reverse=True)
+        highest_match_count = sorted_matches[0][1]
+        matches = {license_id: count for license_id, count in sorted_matches if count == highest_match_count}
         return matches, debug
 
     def _preprocess(self, text):

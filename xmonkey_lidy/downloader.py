@@ -161,14 +161,16 @@ class LicenseDownloader:
         exclusions = {}
         for license_id, patterns in license_patterns.items():
             exclusions[license_id] = set()
+            lic_combi = self.generate_hits(license_id)
             for pattern in patterns:
-                if pattern.lower() not in self.keywords and len(pattern) >= 3:
-                    # Add to exclusion if this pattern belongs to multiple licenses
-                    if len(pattern_to_license[pattern]) > 1:
-                        for other_license in pattern_to_license[pattern]:
-                            if other_license != license_id:
-                                exclusions[license_id].update(license_patterns[other_license])
-                        self.total_exclusions_added += 1
+                if pattern not in lic_combi:
+                    if pattern.lower() not in self.keywords and len(pattern) >= 3:
+                        # Add to exclusion if this pattern belongs to multiple licenses
+                        if len(pattern_to_license[pattern]) > 1:
+                            for other_license in pattern_to_license[pattern]:
+                                if other_license != license_id:
+                                    exclusions[license_id].update(license_patterns[other_license])
+                            self.total_exclusions_added += 1
             exclusions[license_id] = list(exclusions[license_id])
         return exclusions
 
