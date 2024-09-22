@@ -55,10 +55,7 @@ class LicenseMatcher:
                 "generated_on": self.license_metadata.get("generated_on", "Unknown Date"),
                 "debug": debug_info if debug else {}
             }
-        # If no match exceeds the threshold, fall back to pattern matching
-        #print("No high similarity match found. Falling back to pattern-based search.")
         matches, pattern_debug_info = self.match_license_with_patterns_and_exclusions(text, license_patterns, exclusions)
-        # Filter out licenses with 0 matches
         matches = {license_id: count for license_id, count in matches.items() if count > 0}
         if matches:
             top_license = max(matches, key=matches.get)

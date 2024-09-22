@@ -120,7 +120,6 @@ class LicenseDownloader:
             },
             "data": exclusions
         })
-        
         print(f"\nSPDX license patterns and exclusions have been generated.")
         print(f"Total Patterns Added: {self.total_patterns_added}")
         print(f"Total Exclusions Added: {self.total_exclusions_added}")
