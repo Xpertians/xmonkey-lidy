@@ -1,3 +1,6 @@
+# DEPRECATION NOTICE:
+This project has been deprecated in favor of https://github.com/oscarvalenzuelab/semantic-copycat-oslili/
+
 # xmonkey-lidy
 
 `xmonkey-lidy` is a command-line and Python library tool for identifying open-source licenses in text files using Sørensen-Dice proximity matching and pattern-based matching. It supports SPDX license detection with debug options to help investigate how matches were made.
